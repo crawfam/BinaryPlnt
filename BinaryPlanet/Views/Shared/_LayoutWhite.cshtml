@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <meta name="Binary Planet" content="The Poetry of Henry Crawford, Binary Planet">
+    <meta name="author" content="Henry Crawford">
+
+    @RenderSection("AdditionalMetatags", false)
+    @RenderSection("Styles", false)
+
+    <title>Visio - Responsive Website Template</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="~/Content/assets/animate/animate.min.css" type="text/css">
+
+    <!-- WEB FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="~/Content/fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/fonts/ionicons/css/ionicons.min.css" type="text/css">
+
+    <!-- GLOBAL STYLE DARK -->
+    @*<link id="stylesheetGlobal" type="text/css" href="~/Content/css/global-style-dark.min.css" rel="stylesheet" media="screen">*@
+    <link id="stylesheetGlobal" type="text/css" href="~/content/css/global-style-blue.min.css" rel="stylesheet" media="screen">
+
+    <!-- ASSETS -->
+    <link rel="stylesheet" href="~/Content/assets/owl-carousel/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/assets/owl-carousel/css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/assets/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+
+    <!-- FAVICON -->
+    <link href="~/Content/images/favicon.png" rel="icon" type="image/png">
+    <!-- Layer slider -->
+    <link rel="stylesheet" href="~/Content/assets/layerslider/css/layerslider.css" type="text/css">
+
+    @*TODO*@
+    @*  @{ Html.RenderPartial("_GoogleAnalytics"); }    *@
+
+</head>
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <div class="body-wrap">
+        <div id="st-container" class="st-container">
+
+            @*Sidebar Navigation Code and Links Go here*@
+
+
+            <nav class="st-menu st-effect-1" id="menu-1">
+                <h3 class="st-menu-title">Menu</h3>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home"></i>Home HHH</a></li>
+                        <li><a href="#"><i class="fa fa-angellist"></i>About us</a></li>
+                        <li><a href="#"><i class="fa fa-camera"></i>Blog</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i>Work</a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i>Online shop</a></li>
+                        <li><a href="#"><i class="fa fa-dropbox"></i>Features</a></li>
+                    </ul>
+                </div>
+
+                <h3 class="st-menu-title">Quick links</h3>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Silken <span>Truth</span></a></li>
+                        <li><a href="#">The <span>Cold Ice</span></a></li>
+                        <li><a href="#">Soaring of <span>Stars</span></a></li>
+                    </ul>
+                </div>
+
+                <h3 class="st-menu-title">Socia media</h3>
+                <div class="social-media style-1 v2">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook "></i>
+                    </a>
+                    <a href="#" class="google-plus">
+                        <i class="fa fa-google-plus "></i>
+                    </a>
+                    <a href="#" class="pinterest">
+                        <i class="fa fa-pinterest "></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter "></i>
+                    </a>
+                </div>
+            </nav>
+
+            @*End Sidebar Navigation Code and Links*@
+
+            <div class="st-pusher">
+                <div class="st-content">
+                    <div class="st-content-inner">
+                        <!-- HEADER -->
+                        <div class="header" id="header">
+                            <!-- NAVBAR -->
+                            <nav class="navbar navbar-main navbar-main-inverse navbar-shadow" role="navigation" id="slide-nav">
+                                <div class="container relative">
+                                    <div class="navbar-header">
+                                        <a class="navbar-logo" href="~/Home">
+                                            <img src="~/Content/images/logo/BPLogoNew2.png" />
+                                            @*<h1>Binary Planet <small>for the web</small></h1>*@
+                                        </a>
+
+                                        <!-- NAVBAR TOGGLE -->
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <!-- SLIDEBAR TOGGLE -->
+                                        <button type="button" class="navbar-icon-btn btn-st-trigger" data-effect="st-effect-1">
+                                            <i class="fa fa-dedent"></i>
+                                        </button>
+                                    </div>
+                                    <div id="slidemenu">
+                                        <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
+                                            <!-- Navbar links THIS IS THE TOP MENU ITEMS -->
+                                            @*<li class="dropdown">
+                                                @Html.ActionLink("Home", "Index", "Home")
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <span>Poems</span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        @Html.ActionLink("Online", "Online", "Poems")
+                                                    </li>
+                                                    <li>
+                                                        @Html.ActionLink("American Software", "AmericanSoftware", "Poems")
+                                                    </li>
+                                                    <li>
+                                                        @Html.ActionLink("Videos", "Videos", "Poems")
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                @Html.ActionLink("Guest Artists", "Index", "GuestArtists")
+                                            </li>
+                                            <li class="dropdown">
+                                                @Html.ActionLink("Bio", "Bio", "Home")
+                                            </li>
+                                            <li class="dropdown">
+                                                @Html.ActionLink("Contact", "Contact", "Home")
+                                            </li>*@
+                                        
+                                        <li class="dropdown-icon hidden-xs hidden-sm">
+                                            <a  href="#" class="btn-st-trigger ttip" data-effect="st-effect-1">
+                                                <span><i class="fa fa-bars"></i></span>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                        <ul>
+                                            @Html.Partial("_LoginPartial")
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                        @RenderBody()    @* RENDER BODY - HERE IS WHERE THE PAGES GO *@
+
+                        <!-- FOOTER -->
+                        <footer class="footer style-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="col">
+                                            <h1>DC Poetry</h1>
+                                            <p class="no-margin">
+                                                The DC area is rich with poetic voices. Readings are held all over the area year round. There are several journals devoted to DC poetry. These, along with the academic institutions, help to contribute to a vibrant community of poets. Here are just a few favorite links.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="col">
+                                            <h4>Journals</h4>
+                                            <ul>
+                                                <li><a target="_blank" href="http://www.beltwaypoetry.com/" title="Beltway Poetry">Beltway Poetry Quarterly</a></li>
+                                                <li><a target="_blank" href="http://districtlit.com/index" title="District Lit">District Lit</a></li>
+                                                <li><a target="_blank" href="https://poetlore.com/" title="Poet Lore">Poet Lore</a></li>
+                                                <li><a target="_blank" href="http://www.tidalbasinpress.org/" title="Tidal Basin Review">Tidal Basin Reivew</a></li>
+                                                <li><a target="_blank" href="http://www.american.edu/cas/literature/folio/" title="Folio">Folio - American University</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="col">
+                                            <h4>Readings</h4>
+                                            <ul>
+                                                <li><a target="_blank" href="http://www.beltwaypoetry.com/events/cafe-muse-51/" title="About">Cafe Muse Series</a></li>
+                                                <li><a target="_blank" href="https://www.nps.gov/event/event-details.htm?eventID=2927985" title="Joaquin Miller Poetry Series">Joaquin Miller Poetry Series</a></li>
+                                                <li><a target="_blank" href="http://www.busboysandpoets.com/poetry" title="Busboys and Poets">Busboys and Poets</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="col">
+                                            <h4>Community</h4>
+                                            <ul>
+                                                <li><a target="_blank" href="https://www.writer.org/" title="About">The Writer's Center</a></li>
+                                                <li><a target="_blank" href="https://www.dclibrary.org/node/29736" title="Federal Poets Society">Federal Poets Society</a></li>
+                                                <li><a target="_blank" href="http://splendidwake.blogspot.com/" title="Splendid Wake">A Splendid Wake</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col">
+                                            <h4>Area Poet Websites</h4>
+                                            <ul>
+                                                <li><a target="_blank" href="http://alenier.blogspot.com/" title="Karren Alenier">Karren Alenier</a></li>
+                                                <li><a target="_blank" href="http://www.judithbowles.com/" title="Judy Bowles">Judy Bowles</a></li>
+                                                <li><a target="_blank" href="http://donaldillich.blogspot.com/" title="Donald Illich">Donald Illich</a></li>
+                                                <li><a target="_blank" href="http://www.davidkeplingerpoetry.com/" title="David Keplinger">David Keplinger</a></li>
+                                                <li><a target="_blank" href="http://susanokie.com/" title="Susan Okie">Susan Okie</a></li>
+                                                <li><a target="_blank" href="http://www.kimroberts.org/" title="Kim Roberts">Kim Roberts</a></li>
+                                                <li><a target="_blank" href="https://www.kermitmoyer.net/" title="Kermit Moyer">Kermit Moyer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        <div class="copyright style-1">
+                            <div class="container">
+                                <div class="div-table v-middle">
+                                    <div class="cell">
+                                        All rights reserved. Copyright &copy; 2017 <span class="company-rights">Henry Crawford</span>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="social-media style-2 v4 text-right">
+                                            <a target="_blank" href="https://www.facebook.com/AmericanSoftwarePoetry/" class="facebook">
+                                                <i class="fa fa-facebook "></i>
+                                            </a>
+                                            <a target="_blank" href="mailto:HenryCrawfordPoetry@gmail.com" class="google-plus">
+                                                <i class="fa fa-google-plus "></i>
+                                            </a>
+                                            <a target="_blank" href="https://www.youtube.com/channel/UCU_hLdGUflx3IqAR8POOlSw" class="youtube">
+                                                <i class="fa fa-youtube"></i>
+                                            </a>
+                                            <a target="_blank" href="https://twitter.com/Crawfam" class="twitter">
+                                                <i class="fa fa-twitter "></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END: st-pusher -->
+    </div><!-- END: body-wrap -->
+    <!-- SCRIPTS -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- SCRIPTS -->
+    <!-- Required JSs -->
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/jquery-ui.min.js"></script>
+   
+    <!-- Essential JSs -->
+    <script src="~/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/assets/bootstrap/js/tooltip.js"></script>
+    <script src="~/Content/js/bootstrap-extensions/bootstrap-dropdownhover.js"></script>
+    <script src="~/Content/js/bootstrap-extensions/bootstrap.slide-menu.js"></script>
+    <script src="~/Content/js/bootstrap-extensions/bootstrap-validator.js"></script>
+    <script src="~/Content/js/modernizr.custom.js"></script>
+    <script src="~/Content/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="~/Content/js/jquery.easing.js"></script>
+    <script src="~/Content/js/classie.js"></script>
+
+    <!-- Assets - Required -->
+    <script src="~/Content/assets/parallax/parallax.min.js"></script>
+    <script src="~/Content/assets/page-scroller/jquery.ui.totop.min.js"></script>
+    <script src="~/Content/assets/waypoints/waypoints.min.js"></script>
+
+    <!-- Assets - Optional (keep what you need) -->
+    <!-- Sidebar transitions -->
+    <script src="~/Content/js/sidebar-transitions/sidebar-transitions.js"></script>
+    <!-- Smooth scroll -->
+    <script src="~/Content/js/jquery.smoothscroll.js"></script>
+    <!-- Media gallery view -->
+    <script src="~/Content/assets/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Animated counter -->
+    <script src="~/Content/assets/milestone-counter/jquery.countTo.js"></script>
+    <!-- Animated pie charts -->
+    <script src="~/Content/assets/easy-pie-chart/js/jquery.easypiechart.js"></script>
+    <!-- Owl carousel - Touch enabled carousel -->
+    <script src="~/Content/assets/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- Cross-browser responsivity scripts -->
+    <!--[if lt IE 9]>
+        <script src="~/Content/js/html5shiv.js"></script>
+        <script src="~/Content/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Analitycs JS -->
+    <script type="text/javascript" src="~/Content/js/dvs.ga.js"></script>
+
+    <!-- Layer slider -->
+    <script src="~/Content/assets/layerslider/js/greensock.js" type="text/javascript"></script>
+    <script src="~/Content/assets/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="~/Content/assets/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <!-- Initializing scripts -->
+    <script>
+        // Layer Slider
+        jQuery("#layerslider").layerSlider({
+            pauseOnHover: true,
+            autoPlayVideos: false,
+            skinsPath: 'assets/layerslider/skins/',
+            responsive: false,
+            responsiveUnder: 1280,
+            layersContainer: 1280,
+            skin: 'borderlessdark3d',
+            hoverPrevNext: true,
+        });
+    </script>
+
+    <!-- App JS -->
+    <script src="~/Content/js/dvs.app.js"></script>
+    
+
+    @RenderSection("Scripts", false)
+</body>
+</html> 
