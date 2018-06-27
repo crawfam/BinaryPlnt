@@ -1970,12 +1970,12 @@
     <Content Include="Content\images\away\brain_imaging.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
     <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines2.JPG" />
-    <Content Include="Content\images\backgrounds\broken_tv.JPG" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-2.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-3.JPG" />
     <Content Include="Content\images\backgrounds\body-bg-4.JPG" />
+    <Content Include="Content\images\backgrounds\dark_sunset.jpg" />
     <Content Include="Content\images\backgrounds\full-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\full-bg-10.jpg" />
     <Content Include="Content\images\backgrounds\full-bg-11.jpg" />
@@ -1996,7 +1996,6 @@
     <Content Include="Content\images\backgrounds\shop-fashion-bg-2.jpg" />
     <Content Include="Content\images\backgrounds\shop-fashion-bg-3.jpg" />
     <Content Include="Content\images\backgrounds\shop-fashion-bg-4.jpg" />
-    <Content Include="Content\images\backgrounds\test_background.jpg" />
     <Content Include="Content\images\elements\contact-map-1.png" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\favicon.png" />
