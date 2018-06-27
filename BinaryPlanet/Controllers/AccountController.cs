@@ -58,7 +58,7 @@ namespace BinaryPlanet.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View("Login", "_LayoutWhite");
         }
 
         //
@@ -70,7 +70,7 @@ namespace BinaryPlanet.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View("Login", "_LayoutWhite", model );
             }
 
             // This doesn't count login failures towards account lockout
@@ -87,7 +87,7 @@ namespace BinaryPlanet.Controllers
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                    return View("Login", "_LayoutWhite", model);
             }
         }
 
