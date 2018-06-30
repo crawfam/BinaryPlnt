@@ -203,8 +203,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\custom-row-equal-sizeer.css" />
+    <Content Include="Content\css\custom-libre-baskerville-style.css" />
+    <Content Include="Content\css\custom-TOC-styles.css" />
     <Content Include="Content\images\away\portrait_of_a _family_as_four_discrete_stanzas.JPG" />
-    <Content Include="App_Data\PoemsText\TEMPLATE.cshtml" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
     <Content Include="Content\ajax\portfolio\loadMore-2.html" />
     <Content Include="Content\ajax\portfolio\loadMore.html" />
@@ -425,7 +427,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\coming-soon-style.css" />
     <Content Include="Content\css\coming-soon-style.min.css" />
-    <Content Include="Content\css\custom-libre-baskerville-style.css" />
+    <Content Include="Content\css\custom-libre-baskerville-styleOLD.css" />
     <Content Include="Content\css\global-style-blue.css" />
     <Content Include="Content\css\global-style-blue.min.css" />
     <Content Include="Content\css\global-style-brown.css" />
@@ -1969,7 +1971,7 @@
     <Content Include="Content\images\away\fugue_before_lunch.JPG" />
     <Content Include="Content\images\away\brain_imaging.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
-    <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines2.JPG" />
+    <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines.JPG" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-2.jpg" />
@@ -2123,17 +2125,7 @@
     <Content Include="Content\images\icons\svg\set-1\retina.svg" />
     <Content Include="Content\images\icons\svg\set-1\toilet-paper.svg" />
     <Content Include="Content\images\license.txt" />
-    <Content Include="Content\images\logo\BPLogo-2-transparent-large.png" />
-    <Content Include="Content\images\logo\BPLogo-2-transparent-med.png" />
-    <Content Include="Content\images\logo\BPLogoTransparent-med.png" />
-    <Content Include="Content\images\logo\BPLogoTransparent-small.png" />
-    <Content Include="Content\images\logo\BPLogoTransparent.png" />
-    <Content Include="Content\images\logo\logo-1-a.png" />
-    <Content Include="Content\images\logo\logo-1-b.png" />
-    <Content Include="Content\images\logo\logo-2-a.png" />
-    <Content Include="Content\images\logo\logo-2-b.png" />
-    <Content Include="Content\images\logo\BPLogoNew.png" />
-    <Content Include="Content\images\logo\BPLogoNew2.png" />
+    <Content Include="Content\images\logo\BPLogo.png" />
     <Content Include="Content\images\patterns\binding-dark.png" />
     <Content Include="Content\images\patterns\black-lozenge.png" />
     <Content Include="Content\images\patterns\blackorchid.png" />
@@ -2558,11 +2550,6 @@
     <Content Include="Content\less\variables\variables-one-color.less" />
     <Content Include="Content\less\variables\variables-spray-gray.less" />
     <Content Include="Content\less\variables\variables.less" />
-    <Content Include="App_Data\PoemsText\Fugue_Before_Lunch.cshtml" />
-    <Content Include="App_Data\PoemsText\santa_clara_server_room.cshtml" />
-    <Content Include="App_Data\PoemsText\brain_imaging.cshtml" />
-    <Content Include="App_Data\PoemsText\portrait_of_a _family_as_four_discrete_stanzas.cshtml" />
-    <Content Include="App_Data\PoemsText\sketch_of_a_poem_in_10_broken_lines.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -2612,8 +2599,16 @@
     <Content Include="Views\ShowPoems\Poem.cshtml" />
     <Content Include="Views\Shared\_LayoutWhite.cshtml" />
     <Content Include="Views\Home\TableOfContents.cshtml" />
+    <Content Include="Views\ShowPoems\fugue_before_lunch.cshtml" />
+    <Content Include="Views\ShowPoems\santa_clara_server_room.cshtml" />
+    <Content Include="Views\ShowPoems\TEMPLATE.cshtml" />
+    <Content Include="Views\ShowPoems\brain_imaging.cshtml" />
+    <Content Include="Views\ShowPoems\portrait_of_a _family_as_four_discrete_stanzas.cshtml" />
+    <Content Include="Views\ShowPoems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

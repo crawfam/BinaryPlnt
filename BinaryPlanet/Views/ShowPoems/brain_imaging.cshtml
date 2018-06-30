@@ -1,0 +1,70 @@
+﻿@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+
+}
+<div class="container">
+
+    <div class="row eq-size poem-space col-md-10">
+        
+        <div class="col-md-3">
+        &nbsp;
+        </div>
+
+        <div class="col-md-6">
+        <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view view-first">
+                            <img src='@("../../Content/images/away/" + ViewBag.ImageName + ".jpg")' title="@ViewBag.Title">
+                            <div class="mask">
+                                <div class="view-buttons p-15">
+                                    <span class="text-center">
+                                        <a href='@("../../Content/images/away/" + ViewBag.ImageName + ".jpg")' class="btn btn-lg btn-b-base-5 theater">
+                                            Zoom
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="poem">
+
+                    <h1 class="title">@ViewBag.Title</h1>
+                    <p class="hyperlines">
+                        just what is this brain we never get to see<br />
+                        can you shake it [turn it upside down]<br />
+                        [is it a glass jar] of particles sparking out<br />
+                        in every direction [could it be solid] like<br />
+                        four brick walls [obedient] like a good<br />
+                        light bulb [turning on] [turning off] is it<br />
+                        careful [this brain] or like a riotous [movie]&nbsp;&nbsp;<br />
+                        with arrogant actors [rewriting] their<br />
+                        lines [or dignified] like a Museum of Time<br />
+                        a palace of high vaulted [ceilings] of<br />
+                        [cabinets] and [cases] of gold-leaf sheets<br />
+                        stacked by love by hate by anger by fear<br />
+                        with gale-force thoughts like a planet<br />
+                        so small its [years] come in [seconds]<br />
+                        leaving no chance to put on a winter hat<br />
+                        or swat the flies inside a summer house<br />
+                        [smoky] this brain and webbed in circles<br />
+                        plotting and dreaming [even as we sleep]<br />
+                        this [brain] that [knows no end] but calls<br />
+                        like a [doorbell] pulling you to the window<br />
+                        only to find [the mailman] gone and a single<br />
+                        [postcard] left in the box<br />
+                    </p>
+                    <br />
+                    <p class="publication">
+                        First Published in Whimperbang
+                    </p>
+                </div>
+        </div> <!-- .col 6 -->
+    </div> <!-- .row -->
+</div>  <!-- .container -->

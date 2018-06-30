@@ -1,0 +1,17 @@
+﻿/* TOC STYLES */
+
+#toc {
+    font-family: 'Libre Baskerville', serif;
+    font-size: x-large;
+    background-color: #FFFFFF;
+}
+
+    #toc a {
+        margin-left: 50px;
+    }
+
+.toc-heading {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #FFFFFF;
+    text-align: left;
+}

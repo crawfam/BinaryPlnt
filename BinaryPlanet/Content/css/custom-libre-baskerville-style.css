@@ -1,77 +1,81 @@
-body {
-    /*font-family: 'Sedgwick Ave Display', cursive;*/
-    /*font-family: 'Ubuntu Condensed', sans-serif;*/
-    /*font-family: 'Roboto', sans-serif;*/
-    /*font-family: 'Josefin Sans', sans-serif;*/
-    font-family: 'Libre Baskerville', serif;
-    font-size: large;
-    background-color: #FFFFFF;
+﻿.poem-space {
+    background: #dfe5a5;
+    color: #111;
+    font: 14px 'Libre Baskerville', serif;
+    text-align: center;
 }
 
+.poem-space div, poem-space h1, .poem-space h2, .poem-space h3, .poem-space h4, .poem-space h5, .poem-space h6 {
+        margin: 0;
+        padding: 0;
+    }
 
 /* for poems with flat liniation */
 .hyperlines {
     line-height: 1.80;
 }
 
+#poem {
+    margin: auto;
+    padding: 20px 0;
+    text-align: left;   
+}
 
-
-
-/* TOC STYLES */
-
-#toc {
+h1, h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: large;
-    background-color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
 }
 
-#toc a {
-    margin-left:50px;
-}
-
-.toc-heading {
+.title {
     font-family: 'Libre Baskerville', serif;
-    background-color: #FFFFFF;
-    text-align: left;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align:left;
+}
+
+.publication {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #666;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 
-.stanza {
-    padding-left: 30px;
+/* The magic of selectors begins... */
+
+h2:before {
+    content: 'â€” ';
 }
 
-.line {
-    text-indent: -30px;
+h2:after {
+    content: ' â€”';
 }
 
-.tooltip {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+#poem h2 + p:first-letter {
+    float: left;
+    font-size: 38px;
+    line-height: 1;
+    margin: 2px 5px 0 0;
 }
 
-.tooltip-inner {
-    background-color: #0C67f9;
-    color: #FFFFFF;
-}
+/*#poem p:first-line {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}*/
 
-.popover-title {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-}
-
-.popover-content {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #F5F5F5;
-    color: #000000;
-    padding: 25px;
-}
-
-.container-fluid {
-    background-color: #ffffff;
-}
-
-.poem h1, h2, h3, h4 {
-    font-size: xx-large;
-    color: #000000;
+#poem p:last-child {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }

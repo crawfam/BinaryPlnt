@@ -1,0 +1,70 @@
+.baskerville-poem {
+    font-family: 'Libre Baskerville', serif;
+    font-size: large;
+   
+}
+
+.baskerville-poem h1, .baskerville-poem h2, .baskerville-poem h3, .baskerville-poem h4, .baskerville-poem h5, .baskerville-poem h6 {
+        font-size: 26px;
+        font-weight: 700;
+}
+
+/* for poems with flat liniation */
+.hyperlines {
+    line-height: 1.80;
+}
+
+
+/* TOC STYLES */
+
+#toc {
+    font-family: 'Libre Baskerville', serif;
+    font-size: large;
+    background-color: #FFFFFF;
+}
+
+#toc a {
+    margin-left:50px;
+}
+
+.toc-heading {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+.stanza {
+    padding-left: 30px;
+}
+
+.line {
+    text-indent: -30px;
+}
+
+.tooltip {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.tooltip-inner {
+    background-color: #0C67f9;
+    color: #FFFFFF;
+}
+
+.popover-title {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.popover-content {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 25px;
+}
+
+.container-fluid {
+    background-color: #ffffff;
+}
+

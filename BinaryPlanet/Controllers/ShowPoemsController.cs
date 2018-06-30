@@ -14,8 +14,9 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult Poem(string fileName)
         {
-            ViewBag.PoemFileName = fileName + ".cshtml";
-            return View("Poem", "_LayoutWhite");
+            ViewBag.ImageName = fileName;
+            ViewBag.Title = fileName.Replace("_", " ");
+            return View(fileName);
         }
     }
 }
