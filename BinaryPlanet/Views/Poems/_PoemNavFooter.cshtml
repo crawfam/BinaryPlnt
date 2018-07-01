@@ -11,7 +11,14 @@
             </div>
         </div>
         <div class="col-md-4">
-            &nbsp;
+            <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
+                <div class="block-icon circle">
+                    <a href="@Url.Action("Poem", "Poems", new { fileName = ViewBag.NextPoemFileName })"><i class="a-icon ion-android-arrow-back"></i></a>
+                </div>
+                <div class="block-body text-center">
+                    <h3 class="block-title">Previous Poem</h3>
+                </div>
+            </div>
         </div>
         @if (ViewBag.IsLast != true)
         {

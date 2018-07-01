@@ -24,8 +24,10 @@ namespace BinaryPlanet.Models
 
             poems.Add(new PoemFileNames { FileName = "brain_imaging", NextPoemFileName = "portrait_of_a_family_as_four_discrete_stanzas" });
 
-            poems.Add(new PoemFileNames { FileName = "portrait_of_a_family_as_four_discrete_stanzas", NextPoemFileName = "", IsLast = true });
-            
+            poems.Add(new PoemFileNames { FileName = "portrait_of_a_family_as_four_discrete_stanzas", NextPoemFileName = "one_night_in_the_dharma_lounge" });
+
+            poems.Add(new PoemFileNames { FileName = "one_night_in_the_dharma_lounge", NextPoemFileName = "", IsLast = true });
+
         }
 
         public string getNextPoemFileName(string fileName)

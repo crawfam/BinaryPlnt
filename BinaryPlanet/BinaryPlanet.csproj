@@ -204,6 +204,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
@@ -428,7 +429,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\coming-soon-style.css" />
     <Content Include="Content\css\coming-soon-style.min.css" />
-    <Content Include="Content\css\custom-libre-baskerville-styleOLD.css" />
     <Content Include="Content\css\global-style-blue.css" />
     <Content Include="Content\css\global-style-blue.min.css" />
     <Content Include="Content\css\global-style-brown.css" />
@@ -2606,6 +2606,7 @@
     <Content Include="Views\Poems\portrait_of_a_family_as_four_discrete_stanzas.cshtml" />
     <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
     <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
+    <Content Include="Views\Poems\one_night_in_the_dharma_lounge.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

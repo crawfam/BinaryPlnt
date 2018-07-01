@@ -9,22 +9,22 @@
 <div class="container">
 
     <div class="row eq-size poem-space col-md-10">
-        
+
         <div class="col-md-3">
-        &nbsp;
+            &nbsp;
         </div>
 
         <div class="col-md-6">
-        <br />
-                <div class="block style-3">
-                    <div class="block-image">
-                        <div class="view">
-                            <img src='@("../../Content/images/away/" + ViewBag.ImageName + ".jpg")' title="@ViewBag.Title">
-                        </div>
+            <br />
+            <div class="block style-3">
+                <div class="block-image">
+                    <div class="view">
+                        <img src='@("../../Content/images/away/" + ViewBag.ImageName + ".jpg")' title="@ViewBag.Title">
                     </div>
                 </div>
+            </div>
 
-        <div id="poem">
+            <div id="poem">
 
                 <h1 class="title">@ViewBag.Title</h1>
                 <p>
@@ -32,9 +32,11 @@
                 </p>
                 <br />
                 <p class="publication">
-                    
+
                 </p>
             </div>
         </div> <!-- .col 6 -->
+        @Html.Partial("_PoemNavFooter")
+        <br /><br />
     </div> <!-- .row -->
 </div>  <!-- .container -->

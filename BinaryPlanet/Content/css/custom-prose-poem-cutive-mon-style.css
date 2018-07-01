@@ -1,9 +1,9 @@
 ﻿.poem-space {
     /* https://www.webpagefx.com/web-design/color-picker/a5e6cd */
     /* #DFE5A5 #9CD6C0 (darker) #B7E8D5 (ligher) #C2EDDD (even lighter)  */
-    background: #C2EDDD;
+    background: #FFFFFF;
     color: #111;
-    font: 14px 'Libre Baskerville', serif;
+    font: 16px 'Cutive Mono', monospace;
     text-align: center;
 }
 
@@ -30,11 +30,11 @@ h1, h2 {
 }
 
 .title {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cutive Mono', monospace;
     font-size: 34px;
     line-height: 1.2;
     margin-bottom: 10px;
-    text-align:left;
+    text-align: left;
 }
 
 .publication {
