@@ -15,7 +15,8 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult TableOfContents()
         {
-            return View("TableOfContents", "_LayoutWhite");
+            ViewBag.Title = "Table Of Contents";
+            return View("TableOfContents");
         }
 
         public ActionResult About()

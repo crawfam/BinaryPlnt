@@ -4,92 +4,551 @@
 
 @section Styles {
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>Table of Contents</title>
+    <title>@ViewBag.Title</title>
 
-    <link href="~/Content/css/custom-TOC-styles.css" rel="stylesheet" />
 }
 
-
-<!-- SECTION -->
-<section class="sct-color-1 slice">
+<!-- LINK LIST - SECTION -->
+<section class="slice sct-color-2 bb">
     <div class="container">
         <div class="row">
-            <div class="col-md-2"></div>
+            <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>
+            <div class="col-md-3">
+                <h1 class="parallax-title c-white">0001</h1>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="@Url.Action("Poem", "Poems", new {fileName="fugue_before_lunch"})" class="block-title-2">Fugue Before Lunch</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="@Url.Action("Poem", "Poems", new {fileName="santa_clara_server_room"})" class="block-title-2">Santa Clara Server Room</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="@Url.Action("Poem", "Poems", new {fileName="sketch_of_a_poem_in_10_broken_lines"})" class="block-title-2">Sketch of a Poem in 10 Broken Lines</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="@Url.Action("Poem", "Poems", new {fileName="brain_imaging"})" class="block-title-2">Brain Imaging</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="@Url.Action("Poem", "Poems", new {fileName="portrait_of_a_family_as_four_discrete_stanzas"})" class="block-title-2">Portrait Of A Family As Four Discrete Stanzas</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">One Night in the Dharma Lounge</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">From Jersey City With Love & Squalor</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Happiness</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Years Later, Frank O’Hara</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Twilight Zone Reboot</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Sonnosphere [Fragments of a Sci-Fi Epic]</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Convergence</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
 
-            <div class="col-md-9">
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">HAL 9000 [A Year Before the Jupiter Launch]</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
 
-                <h1 class="toc-heading" style="font:xx-large">
-                    Table of Contents
-                </h1>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Machine Language</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
 
-                <div id="toc">
+            </div> <!-- End of Section 0001 -->
+            <!-- SECTION 0010 -->
 
-                    <ul class="list-style-1 v2">
-                        <li><b>00000001</b></li>
-                        <li><a href="@Url.Action("Poem", "ShowPoems", new {fileName="Fugue_Before_Lunch"})">Fugue Before Lunch</a></li>
-                        <li><a href="@Url.Action("Poem", "ShowPoems", new {fileName="Santa_Clara_Server_Room"})">Santa Clara Server Room</a></li>
-                        <li><a href="@Url.Action("Poem", "ShowPoems", new {fileName="sketch_of_a_poem_in_10_broken_lines"})">Sketch of a Poem in 10 Broken Lines</a></li>
-                        <li><a href="@Url.Action("Poem", "ShowPoems", new {fileName="brain_imaging"})">Brain Imaging</a></li>
-                        <li><a href="@Url.Action("Poem", "ShowPoems", new {fileName="portrait_of_a _family_as_four_discrete_stanzas"})">Portrait of a Family as Four Discrete Stanzas</a></li>
-                        <li><a href="#">One Night in the Dharma Lounge</a></li>
-                        <li><a href="#">From Jersey City With Love & Squalor</a></li>
-                        <li><a href="#">Happiness</a></li>
-                        <li><a href="#">Years Later, Frank O’Hara</a></li>
-                        <li><a href="#">Twilight Zone Reboot</a></li>
-                        <li><a href="#">The Sonnosphere [Fragments of a Sci-Fi Epic]</a></li>
-                        <li><a href="#">The Convergence</a></li>
-                        <li><a href="#">HAL 9000 [A Year Before the Jupiter Launch]</a></li>
-                        <li><a href="#">Machine Language</a></li>
-                    </ul>
-                    <br /><br />
-                    <ul class="list-style-1 v2">
-                        <li><b>00000010</b></li>
-                        <li><a href="#">30 Second Saga</a></li>
-                        <li><a href="#">Action Poem: A Non-Combatants’ Vietnam</a></li>
-                        <li><a href="#">7 Disappearing Words</a></li>
-                        <li><a href="#">And Now a Word From the Management</a></li>
-                        <li><a href="#">Last Meal at Blue Earth Cafe</a></li>
-                        <li><a href="#">Audio Tour of a Box</a></li>
-                        <li><a href="#">What is it like to lose yourself?</a></li>
-                        <li><a href="#">Love in the Age of Communism</a></li>
-                        <li><a href="#">Sex and its Discontents</a></li>
-                        <li><a href="#">Spy Verses Spy [Fragments of a 60’s Spy Novel]</a></li>
-                        <li><a href="#">The Singing Commuters</a></li>
-                        <li><a href="#">Year of the Shoe</a></li>
-                        <li><a href="#">When Victor and Linden got Married</a></li>
-                        <li><a href="#">Television is not for Everyone</a></li>
-                        <li><a href="#">Oh, Columbia!</a></li>
-                        <li><a href="#">Joe McCarthy</a></li>
-                    </ul>
-                    <br /><br />
-                    <ul class="list-style-1 v2">
-                        <li><b>00000011</b></li>
-                        <li><a href="#">Taking the Fall</a></li>
-                        <li><a href="#">The Age of Children</a></li>
-                        <li><a href="#">Leaving</a></li>
-                        <li><a href="#">They Almost Look Like us</a></li>
-                        <li><a href="#">Think of the Children</a></li>
-                        <li><a href="#">Roadside Reckoning</a></li>
-                        <li><a href="#">Saturday Morning</a></li>
-                        <li><a href="#">The ZooMonkey</a></li>
-                        <li><a href="#">Girl in a Supermarket</a></li>
-                        <li><a href="#">Elegy for a Spin Instructor</a></li>
-                        <li><a href="#">The Cosmological Constant</a></li>
-                        <li><a href="#">Living by Days</a></li>
-                        <li><a href="#">The Meaning of Snow</a></li>
-                        <li><a href="#">The Art of the Poem</a></li>
-                    </ul>
-                    <br /><br />
-                    <ul class="list-style-1 v2">
-                        <li><b>00000100</b></li>
-                        <li><a href="#">The Love Poem of an Average Man</a></li>
-                    </ul>
+            <div class="col-md-3">
+                <h1 class="parallax-title c-white">0010</h1>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">30 Second Saga</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Action Poem: A Non-Combatants’ Vietnam</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">7 Disappearing Words</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Last Meal at Blue Earth Cafe</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
                 </div>
             </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Audio Tour of a Box</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">What is it like to lose yourself?</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Love in the Age of Communism</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Sex and its Discontents</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Spy Verses Spy [Fragments of a 60’s Spy Novel]</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">The Singing Commuters</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Year of the Shoe</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">When Victor and Linden got Married</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Television is not for Everyone</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Oh, Columbia!</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block style-5 v3">
+                <div class="block-icon">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="block-content">
+                    <a href="#" class="block-title-2">Joe McCarthy</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                    </p>
+                </div>
+            </div>
+
+            </div> <!-- END OF SECTION 0010  --> 
+
+            <div class="col-md-3">
+                <h1 class="parallax-title c-white">0011</h1>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Taking the Fall</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Age of Children</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Leaving</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">They Almost Look Like Us</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Think of the Children</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Roadside Reckoning</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Saturday Morning</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The ZooMonkey</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Girl in a Supermarket</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Elegy for a Spin Instructor</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Cosmological Constant</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">Living by Days</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Meaning of Snow</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Art of the Poem</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- END OF SECTION 0011 -->
+
+            <div class="col-md-3">
+                <h1 class="parallax-title c-white">0100</h1>
+                <div class="block style-5 v3">
+                    <div class="block-icon">
+                        <i class="fa fa-circle"></i>
+                    </div>
+                    <div class="block-content">
+                        <a href="#" class="block-title-2">The Love Poem of an Average Man</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
-</section>
 
+</section>
 

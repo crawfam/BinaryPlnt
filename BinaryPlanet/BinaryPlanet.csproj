@@ -192,13 +192,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ShowPoemsController.cs" />
+    <Compile Include="Controllers\PoemsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Poem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -206,7 +207,7 @@
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
-    <Content Include="Content\images\away\portrait_of_a _family_as_four_discrete_stanzas.JPG" />
+    <Content Include="Content\images\away\portrait_of_a_family_as_four_discrete_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
     <Content Include="Content\ajax\portfolio\loadMore-2.html" />
     <Content Include="Content\ajax\portfolio\loadMore.html" />
@@ -2596,15 +2597,15 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\ShowPoems\Poem.cshtml" />
     <Content Include="Views\Shared\_LayoutWhite.cshtml" />
     <Content Include="Views\Home\TableOfContents.cshtml" />
-    <Content Include="Views\ShowPoems\fugue_before_lunch.cshtml" />
-    <Content Include="Views\ShowPoems\santa_clara_server_room.cshtml" />
-    <Content Include="Views\ShowPoems\TEMPLATE.cshtml" />
-    <Content Include="Views\ShowPoems\brain_imaging.cshtml" />
-    <Content Include="Views\ShowPoems\portrait_of_a _family_as_four_discrete_stanzas.cshtml" />
-    <Content Include="Views\ShowPoems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
+    <Content Include="Views\Poems\fugue_before_lunch.cshtml" />
+    <Content Include="Views\Poems\santa_clara_server_room.cshtml" />
+    <Content Include="Views\Poems\TEMPLATE.cshtml" />
+    <Content Include="Views\Poems\brain_imaging.cshtml" />
+    <Content Include="Views\Poems\portrait_of_a_family_as_four_discrete_stanzas.cshtml" />
+    <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
+    <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
