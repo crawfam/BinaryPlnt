@@ -15,13 +15,13 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult Poem(string fileName)
         {
-            Poem p = new Poem();
-            PoemFileNames poemNames = p.getPoem(fileName);
+            Poems p = new Poems();
+            Poem poem = p.getPoem(fileName);
 
-            ViewBag.NextPoemFileName = poemNames.NextPoemFileName;
-            ViewBag.ImageName = poemNames.FileName;
-            ViewBag.Title = poemNames.Name;
-            ViewBag.IsLast = poemNames.IsLast;
+            ViewBag.NextPoemFileName = poem.NextPoemFileName;
+            ViewBag.ImageName = poem.FileName;
+            ViewBag.Title = poem.Name;
+            ViewBag.IsLast = poem.IsLast;
             
             return View(fileName);
         }

@@ -208,6 +208,7 @@
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
+    <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
     <Content Include="Content\images\away\portrait_of_a_family_as_four_discrete_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
     <Content Include="Content\ajax\portfolio\loadMore-2.html" />
