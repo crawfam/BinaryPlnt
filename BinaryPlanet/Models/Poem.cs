@@ -17,7 +17,8 @@ namespace BinaryPlanet.Models
             poems.Add(new Poem(3, "Sketch of a Poem in 10 Broken Lines", 1, 2, 4));
             poems.Add(new Poem(4, "Brain Imaging", 1, 3, 5));
             poems.Add(new Poem(5, "Portrait of a Family as Four Discrete Stanzas", 1, 4, 6));
-            poems.Add(new Poem(6, "One Night in the Dharma Lounge", 1, 5, 7, false, true));
+            poems.Add(new Poem(6, "One Night in the Dharma Lounge", 1, 5, 7));
+            poems.Add(new Poem(7, "From Jersey City With Love & Squalor", 1, 6, 8, false, true)); 
         }
 
         public Poem getPoem(string name)
