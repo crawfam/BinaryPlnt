@@ -10,64 +10,94 @@ namespace BinaryPlanet.Models
     {
         private List<Poem> poems = new List<Poem>();
 
-        public string Name { get; set; }
-        public string FileName { get; set; }
-        public string NextPoemFileName { get; set; }    
-
         public Poems ()
         {
-            poems.Add(new Poem { FileName = "fugue_before_lunch", NextPoemFileName = "santa_clara_server_room" });
-
-            poems.Add(new Poem { FileName = "santa_clara_server_room", NextPoemFileName = "sketch_of_a_poem_in_10_broken_lines" });
-
-            poems.Add(new Poem { FileName = "sketch_of_a_poem_in_10_broken_lines", NextPoemFileName = "brain_imaging" });
-
-            poems.Add(new Poem { FileName = "brain_imaging", NextPoemFileName = "portrait_of_a_family_as_four_discrete_stanzas" });
-
-            poems.Add(new Poem { FileName = "portrait_of_a_family_as_four_discrete_stanzas", NextPoemFileName = "one_night_in_the_dharma_lounge" });
-
-            poems.Add(new Poem { FileName = "one_night_in_the_dharma_lounge", NextPoemFileName = "", IsLast = true });
-
+            poems.Add(new Poem(1, "Fugue Before Lunch", 1, 0, 2, true));
+            poems.Add(new Poem(2, "Santa Clara Server Room", 1, 1, 3));
+            poems.Add(new Poem(3, "Sketch of a Poem in 10 Broken Lines", 1, 2, 4));
+            poems.Add(new Poem(4, "Brain Imaging", 1, 3, 5));
+            poems.Add(new Poem(5, "Portrait of a Family as Four Discrete Stanzas", 1, 4, 6));
+            poems.Add(new Poem(6, "One Night in the Dharma Lounge", 1, 5, 7, false, true));
         }
 
-        public string getNextPoemFileName(string fileName)
+        public Poem getPoem(string name)
         {
-            try
-            {
-                return poems.Where(s => s.FileName.ToLower() == fileName.ToLower()).Select(s => s.NextPoemFileName).FirstOrDefault();
-            }
-            catch
-            {
-                return string.Empty;
-            }
+            return poems.Where(s => s.Name.ToLower() == name.ToLower()).FirstOrDefault();
         }
 
-        public Poem getPoem(string fileName)
+        public Poem getPoem (int Id)
         {
-            return poems.Where(s => s.FileName.ToLower() == fileName.ToLower()).FirstOrDefault();
+            return poems.Where(s => s.Id == Id).FirstOrDefault();
         }
 
     }
 
+
     public class Poem
     {
-        private bool islast = false;
+        private string _name;
+        private int _id { get; set; }
+        private int _section { get; set; }
+        private int _prevPoemId { get; set; }
+        private int _nextPoemId { get; set; }
+
+
+        private bool _isLast = false;
+        private bool _isFirst = false;
+
+        public int Id { get { return _id; } }
+        public int Section { get { return _section; } }
+        public int PrevPoemId { get { return _prevPoemId; } }
+        public int NextPoemId { get { return _nextPoemId; } }
+
+        public Poem(int id, string name, int section, int prevPoemId, int nextPoemId, bool IsFirst = false, bool IsLast = false)
+        {
+            _id = id;
+            _name = name;
+            _section = section;
+            _prevPoemId = prevPoemId;
+            _nextPoemId = nextPoemId;
+
+            _isFirst = IsFirst;
+            _isLast = IsLast;
+        }
 
         public string Name
         {
             get
             {
                 TextInfo UsaTextInfo = new CultureInfo("en-US", false).TextInfo;
-                return UsaTextInfo.ToTitleCase(this.FileName.Replace("_", " "));
+                return UsaTextInfo.ToTitleCase(_name);
             }
         }
 
-        public string FileName { get; set; }
-        public string NextPoemFileName { get; set; }
+        public string FileNameJpg
+        {
+            get
+            {
+                return _name.ToLower().Replace(" ", "_") + ".jpg";
+            }
+        }
+
+        public string FileName
+        {
+            get
+            {
+                return _name.ToLower().Replace(" ", "_");
+            }
+        }
+               
         public bool IsLast
         {
-            get { return islast; }
-            set { islast = value; }
+            get { return _isLast; }
+            set { _isLast = value; }
+        }
+
+        public bool IsFirst
+        {
+            get { return _isFirst; }
+            set { _isLast = value; }
         }
     }
+
 }

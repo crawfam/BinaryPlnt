@@ -13,26 +13,40 @@
         <div class="col-md-4">
             <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
                 <div class="block-icon circle">
-                    <a href="@Url.Action("Poem", "Poems", new { fileName = ViewBag.NextPoemFileName })"><i class="a-icon ion-android-arrow-back"></i></a>
+                    @if (ViewBag.IsFirst)
+                    {
+                        <a href="#"><i class="a-icon ion-android-arrow-back"></i></a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Poem", "Poems", new { Id = ViewBag.PrevPoemId })"><i class="a-icon ion-android-arrow-back"></i></a>
+                    }
                 </div>
                 <div class="block-body text-center">
                     <h3 class="block-title">Previous Poem</h3>
                 </div>
             </div>
         </div>
-        @if (ViewBag.IsLast != true)
-        {
+       
+       
         <div class="col-md-4">
             <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
                 <div class="block-icon circle">
-                    <a href="@Url.Action("Poem", "Poems", new { fileName = ViewBag.NextPoemFileName })"><i class="a-icon ion-android-arrow-forward"></i></a>                    
+                    @if (ViewBag.IsLast == true)
+                    {
+                        <a href="#"><i class="a-icon ion-android-arrow-forward"></i></a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Poem", "Poems", new { Id = ViewBag.NextPoemId })"><i class="a-icon ion-android-arrow-forward"></i></a>
+                    }
                 </div>
                 <div class="block-body text-center">
                     <h3 class="block-title">Next Poem</h3>
                 </div>
             </div>
         </div>
-        }
+
     </div>
 </div>
 

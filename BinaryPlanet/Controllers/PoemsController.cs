@@ -13,17 +13,27 @@ namespace BinaryPlanet.Controllers
 
         // see: http://www.dotnet-stuff.com/tutorials/aspnet-mvc/how-to-render-different-layout-in-asp-net-mvc
 
-        public ActionResult Poem(string fileName)
+        public ActionResult Poem(int Id)
         {
             Poems p = new Poems();
-            Poem poem = p.getPoem(fileName);
+            Poem poem = p.getPoem(Id);
 
-            ViewBag.NextPoemFileName = poem.NextPoemFileName;
-            ViewBag.ImageName = poem.FileName;
+            if (!poem.IsFirst)
+            {
+                ViewBag.PrevPoemId = p.getPoem(poem.PrevPoemId).Id;
+            }
+            if (!poem.IsLast)
+            {
+                ViewBag.NextPoemId = p.getPoem(poem.NextPoemId).Id;
+            }
+
+
+            ViewBag.ImageName = p.getPoem(poem.Id).FileNameJpg;
             ViewBag.Title = poem.Name;
             ViewBag.IsLast = poem.IsLast;
+            ViewBag.IsFirst = poem.IsFirst;
             
-            return View(fileName);
+            return View(poem.FileName);
         }
     }
 }

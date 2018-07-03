@@ -208,6 +208,7 @@
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
+    <Content Include="Content\images\away\a_non-combatants%27_vietnam.JPG" />
     <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
     <Content Include="Content\images\away\portrait_of_a_family_as_four_discrete_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
@@ -2608,6 +2609,7 @@
     <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
     <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
     <Content Include="Views\Poems\one_night_in_the_dharma_lounge.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
