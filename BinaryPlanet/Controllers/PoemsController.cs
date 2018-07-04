@@ -28,12 +28,13 @@ namespace BinaryPlanet.Controllers
             }
 
 
-            ViewBag.ImageName = p.getPoem(poem.Id).FileNameJpg;
-            ViewBag.Title = poem.Name;
-            ViewBag.IsLast = poem.IsLast;
-            ViewBag.IsFirst = poem.IsFirst;
+            //ViewBag.ImageName = p.getPoem(poem.Id).FileNameJpg;
+            //ViewBag.Title = poem.Name;
+            //ViewBag.IsLast = poem.IsLast;
+            //ViewBag.IsFirst = poem.IsFirst;
             
-            return View(poem.FileName);
+            return View(poem.FileName, poem);
+
         }
     }
 }

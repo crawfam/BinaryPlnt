@@ -1,9 +1,11 @@
-﻿@section Styles {
+﻿@model BinaryPlanet.Models.Poem
+
+@section Styles {
 
     <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
     <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
 
-    <title>@ViewBag.Title</title>
+    <title>@Model.Name</title>
 
 }
 <div class="container">
@@ -19,14 +21,14 @@
             <div class="block style-3">
                 <div class="block-image">
                     <div class="view">
-                        <img src='@(ViewBag.ImageName)' title="@ViewBag.Title">
+                        <img src='@Model.FileNameJpg' title="@Model.Name">
                     </div>
                 </div>
             </div>
 
             <div id="poem">
 
-                <h1 class="title">@ViewBag.Title</h1>
+                <h1 class="title">@Model.Name</h1>
                 <p class="hyperlines">
                     it's already [tomorrow] in Shanghai [midnight]<br />
                     in [Palo Alto] and I'm working with Kumar [aka]<br />
