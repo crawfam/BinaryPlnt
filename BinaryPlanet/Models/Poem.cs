@@ -18,7 +18,13 @@ namespace BinaryPlanet.Models
             poems.Add(new Poem(4, "Brain Imaging", 1, 3, 5));
             poems.Add(new Poem(5, "Portrait of a Family as Four Discrete Stanzas", 1, 4, 6));
             poems.Add(new Poem(6, "One Night in the Dharma Lounge", 1, 5, 7));
-            poems.Add(new Poem(7, "From Jersey City With Love & Squalor", 1, 6, 8, false, true)); 
+            poems.Add(new Poem(7, "From Jersey City With Love & Squalor", "from_jrsey_cty_with_love_and_squalor", 1, 6, 8));
+            poems.Add(new Poem(8, "Happiness", 1, 7, 9));
+            poems.Add(new Poem(9, "Years Later, Frank O'Hara", "years_later_frank_ohara", 1, 8, 10, false, true));
+
+
+
+
         }
 
         public Poem getPoem(string name)
@@ -51,10 +57,15 @@ namespace BinaryPlanet.Models
         public int PrevPoemId { get { return _prevPoemId; } }
         public int NextPoemId { get { return _nextPoemId; } }
 
-        public Poem(int id, string name, int section, int prevPoemId, int nextPoemId, bool IsFirst = false, bool IsLast = false)
+        private string _fileName;
+
+        public Poem(int id, string name, string fileName, int section, int prevPoemId, int nextPoemId, bool IsFirst = false, bool IsLast = false)
         {
             _id = id;
             _name = name;
+
+            _fileName = fileName;
+
             _section = section;
             _prevPoemId = prevPoemId;
             _nextPoemId = nextPoemId;
@@ -63,12 +74,16 @@ namespace BinaryPlanet.Models
             _isLast = IsLast;
         }
 
+        public Poem(int id, string name, int section, int prevPoemId, int nextPoemId, bool IsFirst = false, bool IsLast = false) :
+            this (id, name, string.Empty, section, prevPoemId, nextPoemId, IsFirst, IsLast)
+        {            
+        }
+
         public string Name
         {
             get
             {
-                TextInfo UsaTextInfo = new CultureInfo("en-US", false).TextInfo;
-                return UsaTextInfo.ToTitleCase(_name);
+                return _name;
             }
         }
 
@@ -76,7 +91,7 @@ namespace BinaryPlanet.Models
         {
             get
             {
-                return _name.ToLower().Replace(" ", "_") + ".jpg";
+                return "../../Content/images/away/" + FileName + ".jpg";
             }
         }
 
@@ -84,7 +99,7 @@ namespace BinaryPlanet.Models
         {
             get
             {
-                return _name.ToLower().Replace(" ", "_");
+                return string.IsNullOrEmpty(_fileName) ? _name.ToLower().Replace(" ", "_") : _fileName;
             }
         }
                

@@ -204,12 +204,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
     <Content Include="Content\images\away\a_non-combatants%27_vietnam.JPG" />
-    <Content Include="Content\images\away\From_Jersey_City_With_Love_&amp;_Squalor.jpg" />
+    <Content Include="Content\images\away\happiness.jpg" />
+    <Content Include="Content\images\away\from_jrsey_cty_with_love_and_squalor.jpg" />
     <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
     <Content Include="Content\images\away\portrait_of_a_family_as_four_discrete_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
@@ -1976,6 +1978,7 @@
     <Content Include="Content\images\away\brain_imaging.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
     <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines.JPG" />
+    <Content Include="Content\images\away\years_later_frank_ohara.jpg" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-2.jpg" />
@@ -2611,7 +2614,9 @@
     <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
     <Content Include="Views\Poems\one_night_in_the_dharma_lounge.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
-    <Content Include="Views\Poems\from_jersey_city_with_love_&amp;_squalor.cshtml" />
+    <Content Include="Views\Poems\from_jrsey_cty_with_love_and_squalor.cshtml" />
+    <Content Include="Views\Poems\happiness.cshtml" />
+    <Content Include="Views\Poems\years_later_frank_ohara.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,21 +1,18 @@
 ﻿.poem-space {
     /* https://www.webpagefx.com/web-design/color-picker/a5e6cd */
-    /* #DFE5A5 #9CD6C0 (darker) #B7E8D5 (ligher) #C2EDDD (even lighter) #C4F5E2 (ligher) */
-    background: #C4F5E2;
+    /* #DBD7F7(darker) #F2F0FF */
+    background: #F2F0FF;
     color: #111;
-    font: 14px 'Libre Baskerville', serif;
+    font: 18px 'Josefin Sans', sans-serif;
     text-align: center;
+    line-height: 1.80; /* added line spacing for hyperlines */
 }
 
 .poem-space div, poem-space h1, .poem-space h2, .poem-space h3, .poem-space h4, .poem-space h5, .poem-space h6 {
         margin: 0;
         padding: 0;
-    }
-
-/* for poems with flat liniation */
-.hyperlines {
-    line-height: 1.80;
 }
+
 
 #poem {
     margin: auto;
@@ -30,11 +27,11 @@ h1, h2 {
 }
 
 .title {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cutive Mono', monospace;
     font-size: 34px;
     line-height: 1.2;
     margin-bottom: 10px;
-    text-align:left;
+    text-align: left;
 }
 
 .publication {
