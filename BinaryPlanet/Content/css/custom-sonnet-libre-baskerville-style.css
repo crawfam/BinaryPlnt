@@ -1,7 +1,10 @@
-﻿.poem-space {
+﻿/* https://www.toptal.com/designers/subtlepatterns/page/3/ for background png */
+
+
+.poem-space {
     /* https://www.webpagefx.com/web-design/color-picker/a5e6cd */
     /* #DFE5A5 #9CD6C0 (darker) #B7E8D5 (ligher) #C2EDDD (even lighter) #C4F5E2 (ligher) */
-    background: #C4F5E2;
+    background: url('../images/backgrounds/dust_scratches.png');
     color: #111;
     font: 16px 'Libre Baskerville', serif;
     text-align: center;
@@ -14,7 +17,7 @@
 
 /* for poems with flat liniation */
 .hyperlines {
-    line-height: 1.80;
+    line-height: 2.0;
 }
 
 #poem {

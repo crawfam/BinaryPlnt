@@ -8,37 +8,46 @@
     <title>@Model.Name</title>
 
 }
-<div class="container">
+    <div class="container">
 
-    <div class="row eq-size poem-space col-md-10">
+        <div class="row eq-size poem-space col-md-10">
 
-        <div class="col-md-3">
-            &nbsp;
-        </div>
+            <div class="col-md-3">
+                &nbsp;
+            </div>
 
-        <div class="col-md-6">
-            <br />
-            <div class="block style-3">
-                <div class="block-image">
-                    <div class="view">
-                        <img src='@Model.FileNameJpg' title="@Model.Name">
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
                     </div>
                 </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-10">
+
+            <div class="col-md-3">
+                &nbsp;
             </div>
 
-            <div id="poem">
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                    </p>
 
-                <h1 class="title">@Model.Name</h1>
-                <p>
+                </div>
 
-                </p>
-                <br />
-                <p class="publication">
+            </div> <!-- .col-md-6 Poem -->
 
-                </p>
-            </div>
-        </div> <!-- .col 6 -->
-        @Html.Partial("_PoemNavFooter")
-        <br /><br />
-    </div> <!-- .row -->
-</div>  <!-- .container -->
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

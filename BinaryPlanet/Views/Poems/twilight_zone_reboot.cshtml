@@ -1,0 +1,85 @@
+﻿@model BinaryPlanet.Models.Poem
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+<div class="container">
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-6">
+            <br />
+            <div class="block style-3">
+                <div class="block-image">
+                    <div class="view">
+                        <img src='@Model.FileNameJpg' title="@Model.Name">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .col-md-6 Image -->
+
+    </div>
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-6">
+            <div id="poem">
+                <h1 class="title">@Model.Name</h1>
+                <p>
+                    you’re looking at [Plainview] Connecticut<br />
+                    population [8,000] a town of [ballparks]<br />
+                    [soda shops] and [white church steeples]<br />
+                    but as the people of [Plainview] are about<br />
+                    to discover their [Main Street] is but<br />
+                    another road into<br />
+                    <span style="margin-left:100px">&lt;The Twilight Zone&gt;</span><br />
+                    “What if nobody knows we’re here?”<br />
+                    asks [Johnny] the disappearing veteran<br />
+                    looking over a row of closed doors [papered]<br />
+                    over in [NO TRESSPASSING] signs<br />
+                    before a ghost parade of shopkeepers<br />
+                    their stores [folded] and [sold] the bank<br />
+                    [consolidated] into an [ATM] its stony<br />
+                    fortress now a [used record store] fronting<br />
+                    the street that vanished when the [Walmart]<br />
+                    went up and they bulldozed the [lakeshore]<br />
+                    and leveled [Danny’s Diner] when the [movie]<br />
+                    was raised to make way for the [Cineplex]<br />
+                    which is now boarded up because everyone<br />
+                    uses [phones] and [devices] to watch their shows<br />
+                    and every [click] is [captured] in cloud-based<br />
+                    [data] making lists of [shows] they will like<br />
+                    [songs] they will sing [news] they will consume<br />
+                    and [jokes] they will [get] even these lines<br />
+                    of seeming [dissent] coded and [tagged]<br />
+                    with [brackets] to conjure up a sort of whimsy<br />
+                    [if you will] something only a human would do<br />
+                    but how do you know [this] isn’t the work<br />
+                    of a meme consuming machine making<br />
+                    all the [AI] calculations in the cyberspace<br />
+                    reaches of<br />
+                    <span style="margin-left:100px">&lt;The Twilight Zone [!]&gt;</span><br />
+                </p>
+            </div>
+
+        </div> <!-- .col-md-6 Poem -->
+
+        @Html.Partial("_PoemNavFooter")
+        <br /><br />
+
+    </div> <!-- 10 col row  -->
+
+</div>  <!-- .container -->

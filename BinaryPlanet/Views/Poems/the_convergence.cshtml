@@ -1,0 +1,79 @@
+﻿@model BinaryPlanet.Models.Poem
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-10">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-10">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name<sup>*</sup></h1>
+                    <p class="hyperlines">
+                        she was walking her bike [and they were<br />
+                        exploring new ideas] in the Arizona night<br />
+                        [taking humans out of the equation] and she<br />
+                        was crossing Mill Avenue [as they were testing<br />
+                        autonomous cars] walking a bike [with little<br />
+                        regulatory oversight] she hadn’t ordered an Uber<br />
+                        but the SUV came anyway [in a business<br />
+                        friendly environment] at 40 miles an hour<br />
+                        [sensors failing] she was dead before<br />
+                        she could look away [with little oversight]<br />
+                        there was no stopping it [in a business friendly<br />
+                        environment] nothing there to slow it down<br />
+                        [with the driver out of the equation] she was<br />
+                        crossing the street to become another [data<br />
+                        point] along the moonless road<br />
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="row">
+                        <p>
+                            <sup>*</sup> On the night of March 18, 2018, 49-year old Elaine Herzberg became the first pedestrian to be killed by a driverless car. NY Times, <a target="_blank" href="https://www.nytimes.com/2018/03/19/technology/uber-driverless-fatality.html">Self-Driving Uber Car Kills Pedestrian in Arizona, Where Robots Roam.</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

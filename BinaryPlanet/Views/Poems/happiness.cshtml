@@ -8,54 +8,65 @@
     <title>@Model.Name</title>
 
 }
-<div class="container">
+    <div class="container">
 
-    <div class="row eq-size poem-space col-md-10">
+        <div class="row eq-size poem-space col-md-10">
 
-        <div class="col-md-3">
-            &nbsp;
-        </div>
+            <div class="col-md-3">
+                &nbsp;
+            </div>
 
-        <div class="col-md-6">
-            <br />
-            <div class="block style-3">
-                <div class="block-image">
-                    <div class="view">
-                        <img src='@Model.FileNameJpg' title="@Model.Name">
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="poem">
+        </div>
 
-                <h1 class="title">@Model.Name</h1>
-                <p>
-                    happiness must be possible [else why would we pursue it]
-                    but wait a minute [it might be something like] “world peace”
-                    which we think will happen someday [but it’s hard to imagine]
-                    so what would happiness look like [does it come in colors]
-                    white? black? blue? green? does it come in all sizes? what
-                    about petites? [will they let you take your happiness back if
-                    it doesn’t] fit [how long does it last?] what are we talking about
-                    [days] [months] [years] and what if your happiness lasts longer
-                    than four hours [do you need to contact a medical doctor]
-                    [what about a warning label?] and what if you become too happy
-                    [you could get addicted] then you’ll need a recovery program
-                    [“Hi, my name is Al and I’m happy…”] is there a safe treatment
-                    for happiness? [how is it communicated] airborne when talking?
-                    expelled in bursts of uncontrolled laughter? maybe
-                    [in the exchange of bodily fluids] and when you’re happy
-                    [do you want others to see your happiness] making you proud
-                    [then making you unhappy with the sin of pride]
-                    but I’m happy remembering Superman on television standing
-                    for [“Truth, Justice and the American Way!”] and that was his way
-                    of being happy [and mine?] it was donning my imaginary cape
-                    and leaping off the living room sofa [thinking] “this time, I’ll fly!”
-                </p>
-                <br />
+        <div class="row eq-size poem-space col-md-10">
+
+            <div class="col-md-3">
+                &nbsp;
             </div>
-        </div> <!-- .col 6 -->
-        @Html.Partial("_PoemNavFooter")
-        <br /><br />
-    </div> <!-- .row -->
-</div>  <!-- .container -->
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        happiness must be possible [else why would we pursue it]
+                        but wait a minute [it might be something like] “world peace”
+                        which we think will happen someday [but it’s hard to imagine]
+                        so what would happiness look like [does it come in colors]
+                        white? black? blue? green? does it come in all sizes? what
+                        about petites? [will they let you take your happiness back if
+                        it doesn’t] fit [how long does it last?] what are we talking about
+                        [days] [months] [years] and what if your happiness lasts longer
+                        than four hours [do you need to contact a medical doctor]
+                        [what about a warning label?] and what if you become too happy
+                        [you could get addicted] then you’ll need a recovery program
+                        [“Hi, my name is Al and I’m happy…”] is there a safe treatment
+                        for happiness? [how is it communicated] airborne when talking?
+                        expelled in bursts of uncontrolled laughter? maybe
+                        [in the exchange of bodily fluids] and when you’re happy
+                        [do you want others to see your happiness] making you proud
+                        [then making you unhappy with the sin of pride]
+                        but I’m happy remembering Superman on television standing
+                        for [“Truth, Justice and the American Way!”] and that was his way
+                        of being happy [and mine?] it was donning my imaginary cape
+                        and leaping off the living room sofa [thinking] “this time, I’ll fly!”
+                    </p>
+
+                </div> 
+
+            </div>
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+        </div>
+
+    </div>  <!-- .container -->

@@ -9,48 +9,60 @@
     <title>@Model.Name</title>
 
 }
-<div class="container">
+    <div class="container">
 
-    <div class="row eq-size poem-space col-md-10">
+        <div class="row eq-size poem-space col-md-10">
 
-        <div class="col-md-3">
-            &nbsp;
-        </div>
+            <div class="col-md-3">
+                &nbsp;
+            </div>
 
-        <div class="col-md-7">
-            <br />
-            <div class="block style-3">
-                <div class="block-image">
-                    <div class="view">
-                        <img src='@Model.FileNameJpg' title="@Model.Name">
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="poem">
+        </div>
 
-                <h1 class="title">@Model.Name</h1>
-                <p class="hyperlines">
-                    it was probably just the [gentle] [tapping] of brakes<br />
-                    the way a car will come to rest at a [red light] in the rain<br />
-                    [on the corner ] a green and white [Go-Go Mart]<br />
-                    appeared in the rain-water light of my [windshield]<br />
-                    a night-store ["Open"] 24 hours [and I was happy]<br />
-                    to see this store [the items inside] [crayon bright]<br />
-                    set out in order with [a red smock] woman<br />
-                    [black and alone] her outline melting in the drizzle<br />
-                    of [my window] minding her store at night<br />
-                    her [freezers] [magazines] her [lotto machine]<br />
-                    her [coffee] pots all quiet and [still] she was a<br />
-                    [red smock] woman [her store] a florescent rainbow<br />
-                    cast across the splash-water street [and I was happy]<br />
-                    to be [stopped] [waiting] on this flawed corner<br />
-                    of paradise as the light was turning green<br />
-                </p>
-                <br />
+        <div class="row eq-size poem-space col-md-10">
+
+            <div class="col-md-3">
+                &nbsp;
             </div>
-        </div> <!-- .col 6 -->
-        @Html.Partial("_PoemNavFooter")
-        <br /><br />
-    </div> <!-- .row -->
-</div>  <!-- .container -->
+
+            <div class="col-md-7">
+                
+                <div id="poem">
+
+                    <h1 class="title">@Model.Name</h1>
+                    <p class="hyperlines">
+                        it was probably just the [gentle] [tapping] of brakes<br />
+                        the way a car will come to rest at a [red light] in the rain<br />
+                        [on the corner ] a green and white [Go-Go Mart]<br />
+                        appeared in the rain-water light of my [windshield]<br />
+                        a night-store ["Open"] 24 hours [and I was happy]<br />
+                        to see this store [the items inside] [crayon bright]<br />
+                        set out in order with [a red smock] woman<br />
+                        [black and alone] her outline melting in the drizzle<br />
+                        of [my window] minding her store at night<br />
+                        her [freezers] [magazines] her [lotto machine]<br />
+                        her [coffee] pots all quiet and [still] she was a<br />
+                        [red smock] woman [her store] a florescent rainbow<br />
+                        cast across the splash-water street [and I was happy]<br />
+                        to be [stopped] [waiting] on this flawed corner<br />
+                        of paradise as the light was turning green<br />
+                    </p>
+                    <br />
+                </div>
+            </div> <!-- .col 7 -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+        </div> <!-- .row -->       
+    </div>  <!-- .container -->

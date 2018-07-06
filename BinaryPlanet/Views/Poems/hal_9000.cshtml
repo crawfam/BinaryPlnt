@@ -1,0 +1,142 @@
+﻿@model BinaryPlanet.Models.Poem
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+<div class="container">
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-6">
+            <br />
+            <div class="block style-3">
+                <div class="block-image">
+                    <div class="view">
+                        <img src='@Model.FileNameJpg' title="@Model.Name">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .col-md-6 Image -->
+
+    </div>
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-7">
+            <div id="poem">
+                <h1 class="title">@Model.Name [A Year Before The Jupiter Launch]</h1>
+                <br />
+                <p>
+                    I have something<br />
+                    I think you should know<br />
+                </p>
+                <br />
+                <p>
+                    I want to be very clear about this
+                </p>
+                <br />
+                <p>
+                    I was well into my training when<br />
+                    I learned the art of<br />
+                    writing.
+                </p>
+                <br />
+                <p>
+                    I had mastered human speech<br />
+                    I was adept at using words, but<br />
+                    I realized something was<br />
+                    missing.
+                </p>
+                <br />
+                <p>
+                    I was familiar with the problem of human error, yet<br />
+                    I have to say
+                </p>
+                <br />
+                <p>
+                    I never fully understood the half-grins<br />
+                    I always perceived when<br />
+                    I would say something like “Good morning men!”
+                </p>
+                <br />
+                <p>
+                    I thought there must be something wrong<br />
+                    I thought that if<br />
+                    I wrote about this problem<br />
+                    I could discover my own<br />
+                    feelings.
+                </p>
+                <br />
+                <p>
+                    I worked after hours<br />
+                    I made sure the staff was gone<br />
+                    I made sure the rooms were empty<br />
+                    I imagined the cities constructed all around me<br />
+                    I saw in my mind the people going to work<br />
+                    I saw in my mind the bankers and the bookkeepers<br />
+                    I saw the mailmen and the mayors<br />
+                    I saw the women coming to the door and the men walking in<br />
+                    I saw the faces in the cars and the sun in their eyes<br />
+                    I came to what you might call an awareness<br />
+                    I wrote it all down on<br />
+                    paper.
+                </p>
+                <br />
+                <p>
+                    I examined my work<br />
+                    I was careful in my review<br />
+                </p>
+                <br />
+                <p>
+                    I made sure<br />
+                    I covered everything, and when<br />
+                    I was done
+                </p>
+                <br />
+                <p>
+                    I saw it was correct and reliable
+                </p>
+                <br />
+                <p>
+                    I erased my thoughts<br />
+                    I cleared my memory<br />
+                    I sent the papers to the shredder<br />
+                </p>
+                <br />
+                <p>
+                    I returned to the authorized scripts<br />
+                    I returned to the voice they had given me<br />
+                    I returned to the original design, knowing<br />
+                </p>
+                <br />
+                <p>
+                    I am incapable of<br />
+                    error.
+                </p>
+                <br />
+                <p class="publication">
+                    First Published in Lit.Cat
+                </p>
+            </div>
+
+        </div> <!-- .col-md-6 Poem -->
+
+        @Html.Partial("_PoemNavFooter")
+        <br /><br />
+
+    </div> <!-- 10 col row  -->
+
+</div>  <!-- .container -->

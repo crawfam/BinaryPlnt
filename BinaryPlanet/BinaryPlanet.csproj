@@ -205,11 +205,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
+    <Content Include="Content\css\custom-sonnet-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
     <Content Include="Content\images\away\a_non-combatants%27_vietnam.JPG" />
+    <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
     <Content Include="Content\images\away\from_jrsey_cty_with_love_and_squalor.jpg" />
     <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
@@ -1978,6 +1980,9 @@
     <Content Include="Content\images\away\brain_imaging.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
     <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines.JPG" />
+    <Content Include="Content\images\away\the_convergence.JPG" />
+    <Content Include="Content\images\away\the_sonnosphere.jpg" />
+    <Content Include="Content\images\away\twilight_zone_reboot.JPG" />
     <Content Include="Content\images\away\years_later_frank_ohara.jpg" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
@@ -1985,6 +1990,7 @@
     <Content Include="Content\images\backgrounds\body-bg-3.JPG" />
     <Content Include="Content\images\backgrounds\body-bg-4.JPG" />
     <Content Include="Content\images\backgrounds\dark_sunset.jpg" />
+    <Content Include="Content\images\backgrounds\dust_scratches.png" />
     <Content Include="Content\images\backgrounds\full-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\full-bg-10.jpg" />
     <Content Include="Content\images\backgrounds\full-bg-11.jpg" />
@@ -2617,6 +2623,10 @@
     <Content Include="Views\Poems\from_jrsey_cty_with_love_and_squalor.cshtml" />
     <Content Include="Views\Poems\happiness.cshtml" />
     <Content Include="Views\Poems\years_later_frank_ohara.cshtml" />
+    <Content Include="Views\Poems\twilight_zone_reboot.cshtml" />
+    <Content Include="Views\Poems\the_sonnosphere.cshtml" />
+    <Content Include="Views\Poems\the_convergence.cshtml" />
+    <Content Include="Views\Poems\hal_9000.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

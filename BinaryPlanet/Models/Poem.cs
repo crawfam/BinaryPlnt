@@ -20,8 +20,11 @@ namespace BinaryPlanet.Models
             poems.Add(new Poem(6, "One Night in the Dharma Lounge", 1, 5, 7));
             poems.Add(new Poem(7, "From Jersey City With Love & Squalor", "from_jrsey_cty_with_love_and_squalor", 1, 6, 8));
             poems.Add(new Poem(8, "Happiness", 1, 7, 9));
-            poems.Add(new Poem(9, "Years Later, Frank O'Hara", "years_later_frank_ohara", 1, 8, 10, false, true));
-
+            poems.Add(new Poem(9, "Years Later, Frank O'Hara", "years_later_frank_ohara", 1, 8, 10));
+            poems.Add(new Poem(10, "Twilight Zone Reboot", 1, 9, 11));
+            poems.Add(new Poem(11, "The Sonnosphere", 1, 10, 12));
+            poems.Add(new Poem(12, "The Convergence", 1, 11, 13));
+            poems.Add(new Poem(13, "HAL 9000", 1, 12, 14, false, true));
 
 
 
