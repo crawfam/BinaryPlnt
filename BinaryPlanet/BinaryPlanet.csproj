@@ -196,8 +196,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806191418153_InitialCreate.cs" />
+    <Compile Include="Migrations\201806191418153_InitialCreate.Designer.cs">
+      <DependentUpon>201806191418153_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807102120059_BPuserAddedToDatabase.cs" />
+    <Compile Include="Migrations\201807102120059_BPuserAddedToDatabase.Designer.cs">
+      <DependentUpon>201807102120059_BPuserAddedToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807102142190_TookOutEmailFromBPUser.cs" />
+    <Compile Include="Migrations\201807102142190_TookOutEmailFromBPUser.Designer.cs">
+      <DependentUpon>201807102142190_TookOutEmailFromBPUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\BPUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Poem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2643,6 +2658,17 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806191418153_InitialCreate.resx">
+      <DependentUpon>201806191418153_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807102120059_BPuserAddedToDatabase.resx">
+      <DependentUpon>201807102120059_BPuserAddedToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807102142190_TookOutEmailFromBPUser.resx">
+      <DependentUpon>201807102142190_TookOutEmailFromBPUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

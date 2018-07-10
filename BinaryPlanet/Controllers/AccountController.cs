@@ -152,11 +152,21 @@ namespace BinaryPlanet.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var bpUser = new BPUser { FirstName = model.FirstName, LastName = model.LastName };
+
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                    bpUser.AppId = user.Id;
+
+                    ApplicationDbContext _context = new ApplicationDbContext();
+
+                    _context.BPUsers.Add(bpUser);
+                    _context.SaveChanges();
+
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
