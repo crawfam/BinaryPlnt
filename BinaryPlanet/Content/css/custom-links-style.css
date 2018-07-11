@@ -1,19 +1,15 @@
-﻿/* unvisited link */
-a:link {
+﻿a.navlink:link {
+    color: red;
+}
+
+a.navlink:visited {
+    color: green;
+}
+
+a.navlink:hover {
     color: blue;
 }
 
-/* visited link */
-a:visited {
-    color: blue;
-}
-
-/* mouse over link */
-a:hover {
-    color: blue;
-}
-
-/* selected link */
-a:active {
-    color: blue;
+a.navlink:active {
+    color: red;
 }
