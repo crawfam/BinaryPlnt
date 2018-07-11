@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
+    <Content Include="Content\css\custom-links-style.css" />
     <Content Include="Content\css\custom-sonnet-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
