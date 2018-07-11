@@ -1,14 +1,11 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
+﻿using BinaryPlanet.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using BinaryPlanet.Models;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace BinaryPlanet.Controllers
 {
@@ -58,7 +55,7 @@ namespace BinaryPlanet.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View("Login", "_LayoutWhite");
+            return View("Login", "_Layout");
         }
 
         //
@@ -70,7 +67,7 @@ namespace BinaryPlanet.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("Login", "_LayoutWhite", model );
+                return View("Login", "_Layout", model );
             }
 
             // This doesn't count login failures towards account lockout
@@ -87,7 +84,7 @@ namespace BinaryPlanet.Controllers
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
-                    return View("Login", "_LayoutWhite", model);
+                    return View("Login", "_Layout", model);
             }
         }
 

@@ -42,14 +42,8 @@ namespace BinaryPlanet.Controllers
             {
                 ViewBag.NextPoemId = p.getPoem(poem.NextPoemId).Id;
             }
-
-
-            //ViewBag.ImageName = p.getPoem(poem.Id).FileNameJpg;
-            //ViewBag.Title = poem.Name;
-            //ViewBag.IsLast = poem.IsLast;
-            //ViewBag.IsFirst = poem.IsFirst;
-            
-            return View(poem.FileName, poem);
+                        
+            return View(poem.FileName, "_Layout", poem);
 
         }
     }
