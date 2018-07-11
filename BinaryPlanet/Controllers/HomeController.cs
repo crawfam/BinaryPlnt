@@ -8,7 +8,10 @@ namespace BinaryPlanet.Controllers
     public class HomeController : Controller
     {
 
-        ApplicationDbContext _context = new ApplicationDbContext();
+        private readonly ApplicationDbContext _context;
+
+        public HomeController() => _context = new ApplicationDbContext();
+
 
         public ActionResult Index()
         {
