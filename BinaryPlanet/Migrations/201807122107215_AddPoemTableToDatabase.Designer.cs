@@ -7,13 +7,13 @@ namespace BinaryPlanet.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class BPuserAddedToDatabase : IMigrationMetadata
+    public sealed partial class AddPoemTableToDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(BPuserAddedToDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddPoemTableToDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807102120059_BPuserAddedToDatabase"; }
+            get { return "201807122107215_AddPoemTableToDatabase"; }
         }
         
         string IMigrationMetadata.Source

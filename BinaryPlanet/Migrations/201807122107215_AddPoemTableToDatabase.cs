@@ -3,18 +3,17 @@ namespace BinaryPlanet.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class BPuserAddedToDatabase : DbMigration
+    public partial class AddPoemTableToDatabase : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.BPUsers",
+                "dbo.Poems",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        AppId = c.String(nullable: false, maxLength: 128),
-                        FirstName = c.String(nullable: false, maxLength: 255),
-                        LastName = c.String(nullable: false, maxLength: 255),
+                        Sequence = c.Int(nullable: false),
+                        Name = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -22,7 +21,7 @@ namespace BinaryPlanet.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.BPUsers");
+            DropTable("dbo.Poems");
         }
     }
 }

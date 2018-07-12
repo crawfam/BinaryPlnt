@@ -10,7 +10,6 @@ namespace BinaryPlanet.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "BinaryPlanet.Models.ApplicationDbContext";
         }
 
         protected override void Seed(BinaryPlanet.Models.ApplicationDbContext context)

@@ -7,13 +7,13 @@ namespace BinaryPlanet.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class TookOutEmailFromBPUser : IMigrationMetadata
+    public sealed partial class PopulatePoemTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TookOutEmailFromBPUser));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulatePoemTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807102142190_TookOutEmailFromBPUser"; }
+            get { return "201807122111573_PopulatePoemTable"; }
         }
         
         string IMigrationMetadata.Source

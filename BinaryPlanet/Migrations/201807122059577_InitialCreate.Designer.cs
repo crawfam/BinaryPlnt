@@ -13,7 +13,7 @@ namespace BinaryPlanet.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201806191418153_InitialCreate"; }
+            get { return "201807122059577_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
