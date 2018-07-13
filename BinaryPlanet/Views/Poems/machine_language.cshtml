@@ -1,0 +1,57 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-prose-poem-cutive-mon-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+<div class="container">
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-6">
+            <br />
+            <div class="block style-3">
+                <div class="block-image">
+                    <div class="view">
+                        <img src='@Model.FileNameJpg' title="@Model.Name">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .col-md-6 Image -->
+
+    </div>
+
+    <div class="row eq-size poem-space col-md-10">
+
+        <div class="col-md-1">
+            &nbsp;
+        </div>
+
+        <div class="col-md-10">
+            <div id="poem">
+                <h1 style="text-align:center" class="title">@Model.Name</h1>
+                <p style="text-align:center;"><i>
+                    The last stanza of Silvia Plath’s poem <i>Daddy</i> programmatically translated into binary numbers along with author’s annotations.
+            </i></p>
+                <p style="text-align:justify">
+                    1010100 1101000 1100101 1110010 1100101 11100010 10000000 10011001 1110011 100000 1100001 100000<b>[ we’re in here now ]</b> 1110011 1110100 1100001 <b>[ where everything ]</b> 1101011 1100101 100000 1101001 1101110 100000 1111001 1101111 1110101 1110010 100000 1100110 1100001 1110100 100000 <b>[ passes ]</b>1100010 1101100 <b>[ bottom of the machine ]</b> 1100001 1100011 1101011 100000 1101000 1100101 1100001 1110010 1110100 100000 1000001 1101110 <b>[ our words ]</b> 1100100 100000 <b>[ finally ]</b> 1110100 1101000 1100101 100000 1110110 <b>[ made just ]</b>1101001 1101100 1101100 1100001 1100111 1100101 1110010 1110011 100000 1101110 1100101 1110110 1100101 <b>[no Jews]</b> 1110010 <b>[no Germans]</b> 100000 <b>[ no vampires ]</b> 1101100 1101001 1101011 1100101 1100100 100000 1111001 1101111 1110101 101110 100000 <b>[ up there ]</b> 1010100 1101000 <b>[ you unmasked ]</b> 1100101  1111001 100000 1100001 1110010 1100101 100000 1100100 1100001 1101110 1100011 1101001 1101110 <b>[ the bastard ]</b> 1100111 00000 1100001 1101110 1100100 100000 1110011 1110100 1100001 1101101 1110000 1101001 1101110 1100111 100000 <b>[ here ]</b> 1101111 <b>[ the skins of words ]</b> 1101110 100000 1111001 1101111 1110101 101110 100000 1010100 1101000 1100101 1111001 100000 1100001 1101100 <b>[ arrive ]</b> 1110111 <b>[ in sequences ]</b> 1100001 1111001 1110011 100000 1101011 1101110 1100101 1110111 100000 1101001 1110100 100000 <b>[ chalked in whitespace ]</b> 1110111 <b>[ bastards all ]</b> 1100001 1110011 100000 1111001 1101111 1110101 101110 100000 1000100 1100001 1100100 <b>[ and never ]</b> 1100100 1111001 101100 100000 1100100 1100001 1100100 1100100  1111001 101100 100000 1111001 1101111  1110101 100000 1100010 1100001 1110011 <b>[ enough ]</b> 1110100 1100001 1110010 1100100 101100 100000 1001001 11100010 10000000 10011001  1101101 100000 1110100 1101000 1110010 1101111  1110101  1100111 <b>[ sun ]</b> 1101000  101110
+                </p>
+
+            </div>
+
+        </div> <!-- .col-md-6 Poem -->
+
+        @Html.Partial("_PoemNavFooter")
+        <br /><br />
+
+    </div> <!-- 10 col row  -->
+
+</div>  <!-- .container -->

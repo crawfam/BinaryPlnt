@@ -208,6 +208,10 @@
     <Compile Include="Migrations\201807122111573_PopulatePoemTable.Designer.cs">
       <DependentUpon>201807122111573_PopulatePoemTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807122143074_AddSpecialNameToPoemTable.cs" />
+    <Compile Include="Migrations\201807122143074_AddSpecialNameToPoemTable.Designer.cs">
+      <DependentUpon>201807122143074_AddSpecialNameToPoemTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -217,6 +221,7 @@
     <Compile Include="Models\Poem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\PoemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
@@ -2643,6 +2648,7 @@
     <Content Include="Views\Poems\the_sonnosphere.cshtml" />
     <Content Include="Views\Poems\the_convergence.cshtml" />
     <Content Include="Views\Poems\hal_9000.cshtml" />
+    <Content Include="Views\Poems\machine_language.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2669,6 +2675,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807122111573_PopulatePoemTable.resx">
       <DependentUpon>201807122111573_PopulatePoemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807122143074_AddSpecialNameToPoemTable.resx">
+      <DependentUpon>201807122143074_AddSpecialNameToPoemTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
