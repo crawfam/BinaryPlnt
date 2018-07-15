@@ -36,5 +36,30 @@ namespace BinaryPlanet.Controllers
             return View(poemViewModel.FileNameView, "_Layout", poemViewModel);
 
         }
+
+        public ActionResult SectionOne()
+        {
+
+            return View();
+        }
+
+        public ActionResult SectionTwo()
+        {
+
+            return View();
+        }
+
+        public ActionResult SectionThree()
+        {
+
+            return View();
+        }
+
+        public ActionResult SectionFour()
+        {
+
+            return View();
+        }
+
     }
 }

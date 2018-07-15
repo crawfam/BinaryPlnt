@@ -2650,6 +2650,10 @@
     <Content Include="Views\Poems\the_convergence.cshtml" />
     <Content Include="Views\Poems\hal_9000.cshtml" />
     <Content Include="Views\Poems\machine_language.cshtml" />
+    <Content Include="Views\Poems\SectionOne.cshtml" />
+    <Content Include="Views\Poems\SectionTwo.cshtml" />
+    <Content Include="Views\Poems\SectionFour.cshtml" />
+    <Content Include="Views\Poems\SectionThree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

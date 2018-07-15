@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Section";
+}
+
+<section id="slider-wrapper" class="layer-slider-wrapper layer-slider-dynamic">
+    <div id="layerslider" style="width:100%;">
+        <!-- Slide 1 -->
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+            <!-- Slide background -->
+            @*<img src="~/Content/images/backgrounds/blue_marble.jpg" class="ls-bg" style="width: 100%;" alt="Blue Marble" />*@
+
+            <!-- Center title -->
+            <h1 class="ls-l title-lg c-white text-uppercase text-center strong-700" style="width:100%; top:35%; left:50%;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                00100
+            </h1>
+
+            <!-- Center paragraph -->
+            <h2 class="ls-l text-center c-white" style="width: 900px; top: 50%; left: 50%;" data-ls="offsetxin:-250;offsetyin:-;durationin:1000;delayin:1000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                The love poem of an average man.
+            </h2>
+            <a href="@Url.Action("Poem", "Poems", new {Id = 1})" class="btn btn-lg btn-base-1 ls-l" style="top: 70%; left: 50%;" data-ls="offsetxin: 0; offsetyin: 250; durationin: 1000; delayin: 1000; offsetxout: 0; offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Begin
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
