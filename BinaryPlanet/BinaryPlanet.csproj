@@ -232,6 +232,7 @@
     <Content Include="Content\css\custom-TOC-styles.css" />
     <Content Include="Content\images\away\30_second_saga.jpg" />
     <Content Include="Content\images\away\7_disappearing_words.jpg" />
+    <Content Include="Content\images\away\and_now_a_word_from_the_management.jpg" />
     <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
     <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
@@ -2658,6 +2659,7 @@
     <Content Include="Views\Poems\30_second_saga.cshtml" />
     <Content Include="Views\Poems\7_disappearing_words.cshtml" />
     <Content Include="Views\Poems\a_non-combatants_vietnam.cshtml" />
+    <Content Include="Views\Poems\and_now_a_word_from_the_management.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
