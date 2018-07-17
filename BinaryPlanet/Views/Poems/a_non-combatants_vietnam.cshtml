@@ -1,0 +1,101 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-8">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        The rules of the poem prohibit the words from carrying the meaning.<br />
+                        Only the evidence collected and the actions taken have any meaning.
+                    </p>
+
+                    <p>
+                        By 1969 the war was known by all to be a fraud but that did not stop me<br />
+                        from feeling like a coward, though I knew the war to have no meaning.
+                    </p>
+
+                    <p>
+                        There’s a likeness of George Washington on the surface of a US quarter,<br />
+                        “God” as well, but it’s “full faith and credit” that gives the coin its meaning.
+                    </p>
+
+                    <p>
+
+                        In the SQL language you can ask “WHERE something is LIKE something else.”<br />
+                        Kim speaks Vietnamese, C#  and BASIC; her English clipped but clear in meaning.
+                    </p>
+
+                    <p>
+                        As a teen I had suicidal thoughts having grown up with a single mother alcoholic.<br />
+                        When your draft number is 54 you’ll need a shrink note, if you get my meaning.
+                    </p>
+
+                    <p>
+                        The dead are unforgiving. History lacks a language to say “I’m sorry” to Kim<br />
+                        who lived in the jungles south of Saigon when the city lost its strategic meaning.
+                    </p>
+
+                    <p>
+                        Found money will give you the instant delight that accompanies good luck.<br />
+                        Children of good luck,  Kim and I share our paths of rediscovered meaning.
+                    </p>
+
+                    <p>
+
+                        According to the rules of the poem the target of an action cannot know who<br />
+                        or what was done in furtherance of the act or else it too would lose its meaning.
+                    </p>
+
+                    <p>
+                        I took out a quarter and put it down on Kim’s desk in a way she’d never know<br />
+                        it was Henry who tendered the coin to give a meaningless gesture meaning.
+                    </p>
+                    <br />
+                    <p class="publication">
+                        First Published in Better Than Starbucks
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

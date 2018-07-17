@@ -81,3 +81,21 @@ h2:after {
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
+
+/* LINKS */
+
+#poem a:link {
+    color: #000000 !important;
+}
+
+#poem a:visited {
+    color: green !important;
+}
+
+#poem a:hover {
+    color: blue !important;
+}
+
+#poem a:active {
+    color: red !important;
+}

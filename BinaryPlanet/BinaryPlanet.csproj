@@ -225,13 +225,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
-    <Content Include="Content\css\custom-links-style.css" />
     <Content Include="Content\css\custom-sonnet-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-TOC-styles.css" />
-    <Content Include="Content\images\away\a_non-combatants%27_vietnam.JPG" />
+    <Content Include="Content\images\away\30_second_saga.jpg" />
+    <Content Include="Content\images\away\7_disappearing_words.jpg" />
+    <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
     <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
     <Content Include="Content\images\away\from_jrsey_cty_with_love_and_squalor.jpg" />
@@ -2654,6 +2655,9 @@
     <Content Include="Views\Poems\SectionTwo.cshtml" />
     <Content Include="Views\Poems\SectionFour.cshtml" />
     <Content Include="Views\Poems\SectionThree.cshtml" />
+    <Content Include="Views\Poems\30_second_saga.cshtml" />
+    <Content Include="Views\Poems\7_disappearing_words.cshtml" />
+    <Content Include="Views\Poems\a_non-combatants_vietnam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

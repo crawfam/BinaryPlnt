@@ -1,0 +1,66 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+<div class="container">
+
+    <div class="row eq-size poem-space col-md-12">
+
+        <div class="col-md-3">
+            <h1><small>< 0010 ></small></h1>
+        </div>
+
+        <div class="col-md-6">
+            <br />
+            <div class="block style-3">
+                <div class="block-image">
+                    <div class="view">
+                        <img src='@Model.FileNameJpg' title="@Model.Name">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .col-md-6 Image -->
+
+    </div>
+
+    <div class="row eq-size poem-space col-md-12">
+
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+
+        <div class="col-md-6">
+            <div id="poem">
+                <h1 class="title">@Model.Name</h1>
+                <p>
+                    [the story is] you<br />
+                    [set the scene] sitting on a bus<br />
+                    [start the narrative] just looking around<br />
+                    [develop a character] who’s that standing there?<br />
+                    [use conflict] I’m not going to give up my seat<br />
+                    [lay out a plot] something drops to the floor<br />
+                    [use dialogue] “Excuse me, sir.”<br />
+                    [sharpen the conflict] “Do I know you?”<br />
+                    [use surprise] “is that your metro card?”<br />
+                    [create a turn] “Oh, I must have dropped it!”<br />
+                    [resolve the conflict] “That’s okay.”<br />
+                    [create a conclusion] “This is my stop.”<br />
+                    [a Hollywood ending] “Mine too.”
+                </p>
+
+            </div>
+
+        </div> <!-- .col-md-6 Poem -->
+
+        @Html.Partial("_PoemNavFooter")
+        <br /><br />
+
+    </div> <!-- 10 col row  -->
+
+</div>  <!-- .container -->
