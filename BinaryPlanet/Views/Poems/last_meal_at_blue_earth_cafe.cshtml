@@ -1,0 +1,115 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        After the<br />
+                        duck stuffed chicken<br />
+                        came the braised tongue<br />
+                        smothered in a caramelized glaze<br />
+                        of liquefied butter<br />
+                        salted to taste<br />
+                        causing a small burn<br />
+                        just below<br />
+                        the sternum<br />
+                        an unspoken groan<br />
+                        from the table<br />
+                        a pain too small to complain.<br />
+                        Left arm throbbing<br />
+                        I’m fine.
+                    </p>
+                    <p>
+                        Overhead<br />
+                        the tipsy chandelier<br />
+                        sways a bit too bright.<br />
+                        Have some more wine.<br />
+                        A split of champagne<br />
+                        a chocolate torte<br />
+                        smothered<br />
+                        in green dye<br />
+                        rivers of sugarless mint.<br />
+                        Radiators steam<br />
+                        unfriendly<br />
+                        heat.
+                    </p>
+                    <p>
+                        Legs buckle<br />
+                        a little wobbly now<br />
+                        breathing the dense vapor<br />
+                        of exhaled air<br />
+                        with the last forkfuls<br />
+                        of candy cherry heads<br />
+                        the final spoons<br />
+                        of minced doughnut holes.<br />
+                        Wallpaper blossoms hang<br />
+                        in lost shades of green.<br />
+                        That left arm<br />
+                        throbbing<br />
+                        I’m fine.
+                    </p>
+                    <p>
+                        It’s late<br />
+                        maybe too late<br />
+                        to loosen that belt.<br />
+                        The table is cleared<br />
+                        by a corpulent man<br />
+                        in a large white coat<br />
+                        blood red cummerbund<br />
+                        fly caught<br />
+                        in his beard.<br />
+                        Outside the cars<br />
+                        are waiting.<br />
+                        Windows closing down<br />
+                        all around us.<br />
+                        The room is turning<br />
+                        slowly at first<br />
+                        are you ready.
+                    </p>
+
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
