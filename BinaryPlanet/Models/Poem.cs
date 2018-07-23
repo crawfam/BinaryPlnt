@@ -13,6 +13,9 @@ namespace BinaryPlanet.Models
         public int Sequence { get; set; }
 
         [Required]
+        public int Section { get; set; }
+
+        [Required]
         [StringLength(128)]
         public string Name { get; set; }
 

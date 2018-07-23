@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201807122143074_AddSpecialNameToPoemTable.Designer.cs">
       <DependentUpon>201807122143074_AddSpecialNameToPoemTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807232042215_AddSectionColumnToPoemTable.cs" />
+    <Compile Include="Migrations\201807232042215_AddSectionColumnToPoemTable.Designer.cs">
+      <DependentUpon>201807232042215_AddSectionColumnToPoemTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -2694,6 +2698,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807122143074_AddSpecialNameToPoemTable.resx">
       <DependentUpon>201807122143074_AddSpecialNameToPoemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807232042215_AddSectionColumnToPoemTable.resx">
+      <DependentUpon>201807232042215_AddSectionColumnToPoemTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
