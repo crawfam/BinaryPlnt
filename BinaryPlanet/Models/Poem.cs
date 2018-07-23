@@ -22,6 +22,9 @@ namespace BinaryPlanet.Models
         [StringLength(128)]
         public string SpecialName { get; set; }
 
+        [StringLength(128)]
+        public string TagLine { get; set; }
+
     }
 }
 

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<BinaryPlanet.Models.Poem>
+
+@{
     ViewBag.Title = "Table of Contents";
 }
 
@@ -13,532 +15,67 @@
 <section class="slice sct-color-2 bb">
     <div class="container">
         <div class="row">
-            <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>
+            <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>            
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0001</h1>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 1})" class="block-title-2">Fugue Before Lunch</a>
-                        <p>
-                            Computer code is written
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 2})" class="block-title-2">Santa Clara Server Room</a>
-                        <p>
-                            it's already [tomorrow]
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 3})" class="block-title-2">Sketch of a Poem in 10 Broken Lines</a>
-                        <p>
-                            I don't want you to
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 4})" class="block-title-2">Brain Imaging</a>
-                        <p>
-                            just what is this brain
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 5})" class="block-title-2">Meet the Stanzas - Family of 4</a>
-                        <p>
-                            I fall into sofas lengthwise
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 6})" class="block-title-2">One Night in the Dharma Lounge</a>
-                        <p>
-                            Despairing of life, a man
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 7})" class="block-title-2">From Jersey City With Love & Squalor</a>
-                        <p>
-                            it was probably just the [gentle] [tapping] of brakes
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 8})" class="block-title-2">Happiness</a>
-                        <p>
-                            happiness must be possible
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 9})" class="block-title-2">Years Later, Frank O’Hara</a>
-                        <p>
-                            I was only five years old
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 10})" class="block-title-2">Twilight Zone Reboot</a>
-                        <p>
-                            you’re looking at [Plainview] Connecticut
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 11})" class="block-title-2">The Sonnosphere</a>
-                        <p>
-                            Galaxies everywhere
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 12})" class="block-title-2">The Convergence</a>
-                        <p>
-                            she was walking her bike
-                        </p>
-                    </div>
-                </div>
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 13})" class="block-title-2">HAL 9000</a>
-                        <p>
-                            I have something I think you should know
-                        </p>
-                    </div>
-                </div>
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
+                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 1))
+                {
+                    <div class="block style-5 v3">
+                        <div class="block-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="block-content">
+                            <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
+                            <p>
+                                @p.TagLine
+                            </p>
+                        </div>
                     </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 14})" class="block-title-2">Machine Language</a>
-                        <p>
-                            1100001 <b>[ we’re in here now ]</b>
-                        </p>
-                    </div>
-                </div>
+                }
 
             </div> <!-- End of Section 0001 -->
             <!-- SECTION 0010 -->
 
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0010</h1>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 15})" class="block-title-2">30 Second Saga</a>
-                        <p>
-                            [the story is] you
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 16})" class="block-title-2">A Non-Combatants’ Vietnam</a>
-                        <p>
-                            The rules of the poem prohibit the words from carrying the meaning
-                        </p>
-                    </div>
-                </div>
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-check-circle"></i>
+                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 2))
+                {
+                    <div class="block style-5 v3">
+                        <div class="block-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="block-content">
+                            <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
+                            <p>
+                                @p.TagLine
+                            </p>
+                        </div>
                     </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 17})" class="block-title-2">7 Disappearing Words</a>
-                        <p>
-                            First to go were the [vulnerable]
-                        </p>
-                    </div>
-                </div>
+                }
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 18})" class="block-title-2">And Now a Word From the Management</a>
-                        <p>
-                            [for your safety] [it’s important] [to know] [the exact location] [of the exits]
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 19})" class="block-title-2">Last Meal at Blue Earth Cafe</a>
-                        <p>
-                            After the duck stuffed chicken
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 20})" class="block-title-2">Audio Tour of a Box</a>
-                        <p>
-                            [we welcome you] [to this audio tour]
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="@Url.Action("Poem", "Poems", new {Id = 21})" class="block-title-2">What is it like to lose yourself?</a>
-                        <p>
-                            Losing yourself is not like losing your credit card
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Love in the Age of Communism</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Sex and its Discontents</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Spy Verses Spy [Fragments of a 60’s Spy Novel]</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Singing Commuters</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Year of the Shoe</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">When Victor and Linden got Married</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Television is not for Everyone</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Oh, Columbia!</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Joe McCarthy</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- END OF SECTION 0010  --> 
+            </div> <!-- END OF SECTION 0010  -->
 
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0011</h1>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Taking the Fall</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Age of Children</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Leaving</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
+                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 3))
+                {
+                    <div class="block style-5 v3">
+                        <div class="block-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="block-content">
+                            <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
+                            <p>
+                                @p.TagLine
+                            </p>
+                        </div>
                     </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">They Almost Look Like Us</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
+                }
 
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Think of the Children</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Roadside Reckoning</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Saturday Morning</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The ZooMonkey</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Girl in a Supermarket</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Elegy for a Spin Instructor</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Cosmological Constant</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">Living by Days</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Meaning of Snow</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
-                    </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Art of the Poem</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
 
             </div>
 
@@ -546,17 +83,21 @@
 
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0100</h1>
-                <div class="block style-5 v3">
-                    <div class="block-icon">
-                        <i class="fa fa-circle"></i>
+
+                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 4))
+                {
+                    <div class="block style-5 v3">
+                        <div class="block-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="block-content">
+                            <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
+                            <p>
+                                @p.TagLine
+                            </p>
+                        </div>
                     </div>
-                    <div class="block-content">
-                        <a href="#" class="block-title-2">The Love Poem of an Average Man</a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
-                </div>
+                }
 
             </div>
 

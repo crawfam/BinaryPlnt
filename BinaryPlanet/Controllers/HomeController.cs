@@ -1,5 +1,6 @@
 ﻿using BinaryPlanet.Models;
 using Microsoft.AspNet.Identity;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -27,8 +28,10 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult TableOfContents()
         {
+            List<Poem> poems = _context.Poems.ToList(); 
+
             ViewBag.Title = "Table Of Contents";
-            return View("TableOfContents");
+            return View("TableOfContents", poems);
         }
 
         public ActionResult About()
