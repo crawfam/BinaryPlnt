@@ -1,0 +1,54 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem" class="hyperlines">
+                    <h1 class="title">@Model.Name</h1>
+                    <p style="text-align:justify">
+                        [we welcome you] [to this audio tour] [and hope] [you find it] [interesting] [and] [informative] [the box] [you see] [in front of you] [has survived] [largely because of its] [uniform sides] [giving the box] [a superior shape] [but don’t let its smooth skin] [fool you] [the edges are sharp] [and extremely lethal] [boxes come] [in various colors] [making it easy] [for them to form groups] [and take sides] [despite the fact] [that they are all] [essentially] [the same shape] [but with only four sides] [it is difficult] [for the box] [to have a more] [complete] [point of view] [although some boxes] [have been found] [to be compatible with] [differing shapes] [or colors] [generally] [you’ll see a hardening] [of the edges] [as it closes up] [and stiffens all four surfaces] [it’s one] [of the oldest survival tools] [of boxes] [and this need to retain its shape] [means that it can be] [stacked] [into compliant] [rows] [and columns] [when confronted] [by a perceived enemy] [so let’s go inside the box] [where we see an array] [of internal boxes] [these help maintain] [the shape of the outer box] [while often retaining] [the dents and bruises] [of past breaches] [and helping] [the host box] [maintain] [its solid] [geometric] [walls] [keeping the interior] [hidden] [at all costs] [that’s the story of the box] [there’s more than meets the eye] [we hope you have enjoyed] [our audio tour] [please visit the gift shop] [where you can try out] [an actual working] [box] [of your own]
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

@@ -233,6 +233,7 @@
     <Content Include="Content\images\away\30_second_saga.jpg" />
     <Content Include="Content\images\away\7_disappearing_words.jpg" />
     <Content Include="Content\images\away\and_now_a_word_from_the_management.jpg" />
+    <Content Include="Content\images\away\audio_tour_of_a_box.JPG" />
     <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
     <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
@@ -240,7 +241,7 @@
     <Content Include="Content\images\away\last_meal_at_blue_earth_cafe.jpg" />
     <Content Include="Content\images\away\machine_language.jpg" />
     <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
-    <Content Include="Content\images\away\portrait_of_a_family_as_four_discrete_stanzas.JPG" />
+    <Content Include="Content\images\away\meet_the_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
     <Content Include="Content\ajax\portfolio\loadMore-2.html" />
     <Content Include="Content\ajax\portfolio\loadMore.html" />
@@ -2640,7 +2641,7 @@
     <Content Include="Views\Poems\santa_clara_server_room.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
     <Content Include="Views\Poems\brain_imaging.cshtml" />
-    <Content Include="Views\Poems\portrait_of_a_family_as_four_discrete_stanzas.cshtml" />
+    <Content Include="Views\Poems\meet_the_stanzas.cshtml" />
     <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
     <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
     <Content Include="Views\Poems\one_night_in_the_dharma_lounge.cshtml" />
@@ -2662,6 +2663,7 @@
     <Content Include="Views\Poems\a_non-combatants_vietnam.cshtml" />
     <Content Include="Views\Poems\and_now_a_word_from_the_management.cshtml" />
     <Content Include="Views\Poems\last_meal_at_blue_earth_cafe.cshtml" />
+    <Content Include="Views\Poems\audio_tour_of_a_box.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
