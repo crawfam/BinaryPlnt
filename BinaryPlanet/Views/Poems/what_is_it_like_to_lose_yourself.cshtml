@@ -1,0 +1,54 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />    
+    <link href="~/Content/css/custom-prose-poem-cutive-mon-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-1">
+                &nbsp;
+            </div>
+
+            <div class="col-md-10">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p style="text-align:justify;">
+                        Losing yourself is not like losing your credit card. The dozen unseen faces. Sitting at screens. Some half-smiling. Some with pursed cigarette lips. Some unshaven. The phones of voices a distant crackle away. The explanations. The missing birth certificate. What is the maiden name of your mother? [A maiden, is that what she was?] Where have you lived. Where are you living now? How did this happen. How did this happen to you? In the end, the feeling after a year driving around in your car, looking out the passing windows, that you are finally back together again. No. Losing yourself is more like losing your eyes in the face of a lover looking directly through your façade.
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

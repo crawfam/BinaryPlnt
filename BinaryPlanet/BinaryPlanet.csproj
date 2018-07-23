@@ -2009,6 +2009,7 @@
     <Content Include="Content\images\away\the_convergence.JPG" />
     <Content Include="Content\images\away\the_sonnosphere.jpg" />
     <Content Include="Content\images\away\twilight_zone_reboot.JPG" />
+    <Content Include="Content\images\away\what_is_it_like_to_lose_yourself.jpg" />
     <Content Include="Content\images\away\years_later_frank_ohara.jpg" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
@@ -2639,7 +2640,6 @@
     <Content Include="Views\Home\TableOfContents.cshtml" />
     <Content Include="Views\Poems\fugue_before_lunch.cshtml" />
     <Content Include="Views\Poems\santa_clara_server_room.cshtml" />
-    <Content Include="Views\Poems\TEMPLATE.cshtml" />
     <Content Include="Views\Poems\brain_imaging.cshtml" />
     <Content Include="Views\Poems\meet_the_stanzas.cshtml" />
     <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
@@ -2664,6 +2664,7 @@
     <Content Include="Views\Poems\and_now_a_word_from_the_management.cshtml" />
     <Content Include="Views\Poems\last_meal_at_blue_earth_cafe.cshtml" />
     <Content Include="Views\Poems\audio_tour_of_a_box.cshtml" />
+    <Content Include="Views\Poems\what_is_it_like_to_lose_yourself.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
