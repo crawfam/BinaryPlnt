@@ -21,6 +21,7 @@ namespace BinaryPlanet.Controllers
 
         // see: http://www.dotnet-stuff.com/tutorials/aspnet-mvc/how-to-render-different-layout-in-asp-net-mvc
 
+        [Authorize]
         public ActionResult Poem(int Id)
         {
 
@@ -29,6 +30,17 @@ namespace BinaryPlanet.Controllers
                 string userId = User.Identity.GetUserId();
                 BPUser bpUser = _context.BPUsers.Where(s => s.AppId == userId).SingleOrDefault();
                 System.Web.HttpContext.Current.Session["UserName"] = bpUser.FirstName + " " + bpUser.LastName;
+
+                // only mark as read if not already in the database
+                if (!_context.BPUserPoems.Any(s => s.Id == Id && s.BPUserId == bpUser.Id))
+                {
+                    // add poem to list of read poems
+                    BPUserPoems bpup = new BPUserPoems { BPUserId = bpUser.Id, PoemId = Id };
+                    _context.BPUserPoems.Add(bpup);
+                    _context.SaveChanges();
+                }
+
+
             }
 
             PoemViewModel poemViewModel = new PoemViewModel(Id);
