@@ -24,7 +24,7 @@
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            @if (Model.HasRead)
+                            @if (Model.HasRead(p.Id))
                             {
                                 <i class="fa fa-check-circle"></i>
                             }
@@ -52,7 +52,7 @@
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            @if (Model.HasRead)
+                            @if (Model.HasRead(p.Id))
                             {
                                 <i class="fa fa-check-circle"></i>
                             }
@@ -79,7 +79,7 @@
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            @if (Model.HasRead)
+                            @if (Model.HasRead(p.Id))
                             {
                                 <i class="fa fa-check-circle"></i>
                             }

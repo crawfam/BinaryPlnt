@@ -13,6 +13,7 @@ namespace BinaryPlanet.Models
 
         public DbSet<BPUser> BPUsers { get; set; }
         public DbSet<Poem> Poems { get; set; }
+        public DbSet<BPUserPoems> BPUserPoems { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -11,6 +11,7 @@ namespace BinaryPlanet.ViewModels
         private readonly ApplicationDbContext _context;
         private readonly List<Poem> _poems;
         private readonly int _bpUserId = -1;
+        private readonly List<int> _readPoems = new List<int>();
 
 
         public List<Poem> Section1Poems
@@ -49,12 +50,27 @@ namespace BinaryPlanet.ViewModels
 
         }
 
-        public bool HasRead
+        public bool HasRead(int poemId)
         {
-            get
+            if (_bpUserId == -1)
             {
-                return _bpUserId == -1 ? false : true; 
+                // user is not logged in                 
+                return false;
             }
+            else if (_readPoems.Count < 1)
+            {
+                // logged in but none read
+                return false;
+            }
+            else if (_readPoems.Contains(poemId))
+            {
+                // has read poem of this Id
+                return true;
+            }
+
+            // default - just show the TOC
+            return false;
+
         }
 
 
@@ -67,6 +83,10 @@ namespace BinaryPlanet.ViewModels
         public TableOfContentsViewModel(int BPUserId) : this()
         {
             _bpUserId = BPUserId;
+
+            // get list of all poems seen by user
+            _readPoems = _context.BPUserPoems.Where(s => s.BPUserId == _bpUserId).Select(s => s.PoemId).ToList();
+
         }
 
 

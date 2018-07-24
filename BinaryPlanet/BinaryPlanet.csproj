@@ -220,11 +220,16 @@
     <Compile Include="Migrations\201807232129012_AddTagLineColumnToPoemTable.Designer.cs">
       <DependentUpon>201807232129012_AddTagLineColumnToPoemTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807241135174_AddBPUserPoemsTableToDatabase.cs" />
+    <Compile Include="Migrations\201807241135174_AddBPUserPoemsTableToDatabase.Designer.cs">
+      <DependentUpon>201807241135174_AddBPUserPoemsTableToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\BPUser.cs" />
+    <Compile Include="Models\BPUserPoems.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Poem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2709,6 +2714,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807232129012_AddTagLineColumnToPoemTable.resx">
       <DependentUpon>201807232129012_AddTagLineColumnToPoemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807241135174_AddBPUserPoemsTableToDatabase.resx">
+      <DependentUpon>201807241135174_AddBPUserPoemsTableToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
