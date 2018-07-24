@@ -1,4 +1,4 @@
-﻿@model List<BinaryPlanet.Models.Poem>
+﻿@model BinaryPlanet.ViewModels.TableOfContentsViewModel
 
 @{
     ViewBag.Title = "Table of Contents";
@@ -18,13 +18,20 @@
             <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>            
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0001</h1>
+    
 
-
-                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 1))
+                @foreach (BinaryPlanet.Models.Poem p in Model.Section1Poems)
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            <i class="fa fa-check-circle"></i>
+                            @if (Model.HasRead)
+                            {
+                                <i class="fa fa-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-circle"></i>
+                            }
                         </div>
                         <div class="block-content">
                             <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
@@ -41,11 +48,18 @@
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0010</h1>
 
-                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 2))
+                @foreach (BinaryPlanet.Models.Poem p in Model.Section2Poems)
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            <i class="fa fa-check-circle"></i>
+                            @if (Model.HasRead)
+                            {
+                                <i class="fa fa-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-circle"></i>
+                            }
                         </div>
                         <div class="block-content">
                             <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
@@ -61,11 +75,18 @@
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0011</h1>
 
-                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 3))
+                @foreach (BinaryPlanet.Models.Poem p in Model.Section3Poems)
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">
-                            <i class="fa fa-check-circle"></i>
+                            @if (Model.HasRead)
+                            {
+                                <i class="fa fa-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-circle"></i>
+                            }
                         </div>
                         <div class="block-content">
                             <a href="@Url.Action("Poem", "Poems", new {Id = p.Id})" class="block-title-2">@p.Name</a>
@@ -84,7 +105,7 @@
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0100</h1>
 
-                @foreach (BinaryPlanet.Models.Poem p in Model.Where(s => s.Section == 4))
+                @foreach (BinaryPlanet.Models.Poem p in Model.Section4Poems)
                 {
                     <div class="block style-5 v3">
                         <div class="block-icon">

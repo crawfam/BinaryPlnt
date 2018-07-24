@@ -1,4 +1,5 @@
 ﻿using BinaryPlanet.Models;
+using BinaryPlanet.ViewModels;
 using Microsoft.AspNet.Identity;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,21 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult TableOfContents()
         {
-            List<Poem> poems = _context.Poems.ToList(); 
+
+            TableOfContentsViewModel poems;
+
+            if (Request.IsAuthenticated)
+            {
+                string userId = User.Identity.GetUserId();
+                int BPUserId = _context.BPUsers.Where(s => s.AppId == userId).SingleOrDefault().Id;
+                poems = new TableOfContentsViewModel(BPUserId);
+            }
+            else
+            { 
+                poems = new TableOfContentsViewModel();
+            }
+
+
 
             ViewBag.Title = "Table Of Contents";
             return View("TableOfContents", poems);
