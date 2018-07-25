@@ -1,0 +1,67 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-1">
+                &nbsp;
+            </div>
+
+            <div class="col-md-9">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        p. 15.	Maggie Majic was poet to the powerful from Berlin to Bangkok.<br />
+                        p. 35.	“Be wary of double meanings,” the Admiral warned.<br />
+                        p. 41.	“No false moves,” she cried, aiming her pen, a tiny Glock.<br />
+                        p. 52.	Posing in free verse, Maggie was a secret agent of F.O.R.M.<br />
+                        p. 64.	Into the casino strolled Brad Bold brandishing a recent MacArthur.<br />
+                        p. 71.	“Call me Bold,” he said, known worldwide for his opening line.<br />
+                        p. 78.	Safe cracked. Poems stolen. Maggie made sure no one spotted her.<br />
+                        p. 83.	In his London flat, Bold was unaware of Maggie’s midnight crime.<br />
+                        p. 101. Silence came over the casino as the two poets vied for the prize.<br />
+                        p. 150.	Maggie’s poem drew an “ooh” from the wealthy Monte Carlo patrons.<br />
+                        p. 167.	Bold’s work sounded strangely the same and the “ho hums” arrived.<br />
+                        p. 169. “She’s a mod magician”, reported the judge, “almost Shakespearean.”<br />
+                        p. 170.	Though Maggie was said to be somewhat manipulative,<br />
+                        p. 171. She prevailed over Bold, dismissed as derivative.<br />
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

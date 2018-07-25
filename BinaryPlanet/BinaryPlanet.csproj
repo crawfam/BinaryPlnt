@@ -2682,6 +2682,8 @@
     <Content Include="Views\Poems\what_is_it_like_to_lose_yourself.cshtml" />
     <Content Include="Views\Poems\sex_and_its_discontents.cshtml" />
     <Content Include="Views\Poems\love_in_the_age_of_communism.cshtml" />
+    <Content Include="Views\Poems\TEMPLATE.cshtml" />
+    <Content Include="Views\Poems\spy_verses_spy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
