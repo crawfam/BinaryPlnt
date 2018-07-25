@@ -2684,6 +2684,12 @@
     <Content Include="Views\Poems\love_in_the_age_of_communism.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
     <Content Include="Views\Poems\spy_verses_spy.cshtml" />
+    <Content Include="Views\Poems\the_singing_commuters.cshtml" />
+    <Content Include="Views\Poems\year_of_the_shoe.cshtml" />
+    <Content Include="Views\Poems\when_victor_and_linden_got_married.cshtml" />
+    <Content Include="Views\Poems\television_is_not_for_everyone.cshtml" />
+    <Content Include="Views\Poems\oh_columbia.cshtml" />
+    <Content Include="Views\Poems\joe_mccarthy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

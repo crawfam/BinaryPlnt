@@ -1,0 +1,96 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        that guy<br />
+                        we saw<br />
+                        on the bus<br />
+                        this morning<br />
+                        was always jealous<br />
+                        of his brother Bill<br />
+                        who had two wives<br />
+                        the first died young<br />
+                        her sister Jill<br />
+                        refused to go to the funeral<br />
+                        causing a scandal in town<br />
+                        a small community<br />
+                        set on a river<br />
+                        it’s factories closed<br />
+                        men out of work<br />
+                        Jill had a job<br />
+                        at the veterans center<br />
+                        where she fancied Frank<br />
+                        who wore too tight pants<br />
+                        his religion was different<br />
+                        they married anyway<br />
+                        their first son Mike<br />
+                        moved to the city<br />
+                        took classes at night<br />
+                        sometimes got drunk<br />
+                        his girlfriend Dot<br />
+                        wore a red scarf<br />
+                        she had to leave Mike<br />
+                        after the accident<br />
+                        her father was a drunk<br />
+                        she was not going to have it<br />
+                        Dot’s sister Bette<br />
+                        was bossy<br />
+                        but kind to her friends<br />
+                        she worked in the city<br />
+                        always felt guilty<br />
+                        never knew why<br />
+                        lived in a room<br />
+                        a two story walkup<br />
+                        you could see<br />
+                        from the street<br />
+                        a cage and<br />
+                        a parrot<br />
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

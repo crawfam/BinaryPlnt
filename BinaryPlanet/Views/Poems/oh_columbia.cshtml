@@ -1,0 +1,87 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0000 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p class="epigraph">
+                        <i>What shall I say, brave Admiral</i> –<br />
+                        Joaquin Miller, Columbus
+                    </p>
+                    <p>
+                        your [coliseum streets] your lofty Uber clogged<br />
+                        traffic circles your [gaggle] of lunchtime lobbyists<br />
+                        [doubling down] on K Street haunches [consorting]<br />
+                        and [reporting] Big Jim [the old man of the firm]<br />
+                        holding forth [counseling] his partners [“Sail on!”]<br />
+                        [“Sail on!”] in seas of flying fish at Metro Center<br />
+                        just up from the spawning grounds of Bethesda<br />
+                        while the president [still in his underwear] at noon<br />
+                        [looks over the roofs] of tourist shops [the march<br />
+                        of middle school penguins] across Constitution<br />
+                        and Independence keeping their [young punk’s eyes]<br />
+                        on the shiny shoes of Cleveland Park interns<br />
+                        [Banana Republic] millennials catching lunchtime<br />
+                        rays [“Sail on!”] [“Sail on!”] in the minutes of meetings<br />
+                        [printing] and [reprinting] [tweeting] and [re-tweeting]<br />
+                        learning to read the lips of [tireless smiles] of kitchen coups<br />
+                        of [unseen knives] even the leather faced beggars<br />
+                        of Gallery Place look away in pity [as white skinned]<br />
+                        police cars sweep up the crumbs along the Francophile<br />
+                        squares [of pigeon coated generals] shouting<br />
+                        from their leaden horses [“Sail on!”] [“Sail on!”]<br />
+                        up the crooked stairs of the  Hotel Washington<br />
+                        to watch [Gandhi] directing traffic on Mass Ave<br />
+                        before going on break at the [Phillips] to walk<br />
+                        into the last remains of [wood] up oil fragrant stairs<br />
+                        varnished in a wiser time [to lunch] with Caillebotte<br />
+                        and Renoir to whisper to yourself the only words<br />
+                        a city can ever say [Sail on!] [Sail on!]<br />
+                    </p>
+                    <p class="publication">
+                        First Published in District Lit
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

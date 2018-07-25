@@ -42,6 +42,11 @@ h1, h2 {
     letter-spacing: 1px;
 }
 
+.epigraph {
+    font-size: smaller;
+    margin-left: 125px;
+}
+
 h2 {
     color: #666;
     font-size: 18px;

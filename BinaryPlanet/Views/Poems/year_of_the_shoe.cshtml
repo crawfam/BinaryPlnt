@@ -1,0 +1,55 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-prose-poem-cutive-mon-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0000 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-1">
+                &nbsp;
+            </div>
+
+            <div class="col-md-10">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <br />
+                    <p style="text-align:justify">
+                        The first time I saw a woman wearing a shoe on her head I took note. It was white patent leather with an Ultrasuede strap to keep everything in place. A couple days later I saw the men’s version, an Army boot turned upside down with two cross-boned skulls and a leather strap around the chin. There was a YouTube going viral of clubbers doing the “shoe-to-you” affectionately clanking the toes of their HeadShoes. Soon, my phone was blowing up with ads for HeadShoe gear. Then came the house band at Jimmy Fallon all decked out with shoes atop their heads. Italian designer Giuseppe “the Lil’ Shoemaker” was credited with starting it all and originals were going for as much as $1,000.00. That Thanksgiving the cousins came over in HeadShoe pumps and penny loafers, refusing to take them off as the turkey was passed around. There was tremendous Black Friday and Cyber Monday success as consumers battled it out to score the last box before Christmas. Yet, with the new year I began to find the occasional HeadShoe abandoned on the sidewalk. The viral YouTube eventually ran out of unique visitors and Giuseppe was left with but a single Wikipedia page. Reflecting on all this, my buddy Lenny Leibowitz proclaimed from the couch in front of his 60 inch television, “It’s over man, stick a fork in it. It’s done.”
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

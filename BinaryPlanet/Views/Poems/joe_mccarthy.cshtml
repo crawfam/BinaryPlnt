@@ -1,0 +1,116 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        you think<br />
+                        you know something<br />
+                        you say there goes “Joe McCarthy”<br />
+                        you say we’re glad he’s gone, and indeed<br />
+                        you are better off in every way<br />
+                        you keep in shape<br />
+                        you work out in a gym<br />
+                        you swim in a pool<br />
+                        you can floss or forget to floss, either way<br />
+                        you are free<br />
+                        you have learned your lessons<br />
+                        you take your time<br />
+                        you go to sleep knowing<br />
+                        you wake up knowing<br />
+                        nothing.<br />
+                        <br />
+                        you took your seat when<br />
+                        you came before me<br />
+                        you had everything rehearsed<br />
+                        you wrote things down on little square papers<br />
+                        you took them to my table<br />
+                        you made your statements<br />
+                        you were prepared<br />
+                        you had attorneys on either side<br />
+                        you spoke from behind a microphone<br />
+                        you were formal, almost dignified<br />
+                        you wore a handkerchief in your top breast pocket<br />
+                        you had work to do<br />
+                        you had a duty<br />
+                        you said nothing “but the truth”<br />
+                        you had names<br />
+                        you knew the names but<br />
+                        you never really spoke<br />
+                        them.<br />
+                        <br />
+                        you think<br />
+                        you know the names you carry on cards<br />
+                        you put in your wallet, tucked away<br />
+                        you say this one I’ll call, this one I’ll email and so on, but let’s say<br />
+                        you wake up one night and there are sounds downstairs<br />
+                        you go down to check things out<br />
+                        you have a flashlight but the walls are gone<br />
+                        you pull up a chair but it crawls away<br />
+                        you feel a moist breathing in the room<br />
+                        you hear the sound of fingers rapping<br />
+                        you see me standing under a lamp and<br />
+                        you can’t place the face until<br />
+                        you turn away and<br />
+                        wake up.<br />
+
+                        you want to tell someone<br />
+                        you want to know “what does this mean?”, but<br />
+                        you cannot speak<br />
+                        you think things will clear up in a few days, so<br />
+                        you remain silent<br />
+                        you dare not say anything, but in time<br />
+                        you will forget and as the weeks pass<br />
+                        you slowly get back to normal<br />
+                        you go about your business<br />
+                        you see an old friend on the street<br />
+                        you smile as he passes by<br />
+                        you look again, and it’s<br />
+                        me.<br />
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
