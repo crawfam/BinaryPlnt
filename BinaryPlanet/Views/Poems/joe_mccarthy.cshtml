@@ -108,7 +108,43 @@
 
             </div> <!-- .col-md-6 Poem -->
 
-            @Html.Partial("_PoemNavFooter")
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
+                            <div class="block-icon circle">
+                                <a href="@Url.Action("TableOfContents", "Home")"><i class="a-icon ion-ios-list"></i></a>
+                            </div>
+                            <div class="block-body text-center">
+                                <h3 class="block-title">Table of Contents</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
+                            <div class="block-icon circle">
+                                <a href="@Url.Action("Poem", "Poems", new { Id = Model.PrevPoemId })"><i class="a-icon ion-android-arrow-back"></i></a>
+                            </div>
+                            <div class="block-body text-center">
+                                <h3 class="block-title">Previous Poem</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="block style-6 a-icon-effect-1 a-icon-effect-1a">
+                            <div class="block-icon circle">
+                                <a href="@Url.Action("SectionThree", "Poems")"><i class="a-icon ion-android-arrow-forward"></i></a>
+                            </div>
+                            <div class="block-body text-center">
+                                <h3 class="block-title">Next Poem</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>        <br /><br />
             <br /><br />
 
         </div> <!-- 10 col row  -->

@@ -2690,6 +2690,7 @@
     <Content Include="Views\Poems\television_is_not_for_everyone.cshtml" />
     <Content Include="Views\Poems\oh_columbia.cshtml" />
     <Content Include="Views\Poems\joe_mccarthy.cshtml" />
+    <Content Include="Views\Poems\taking_the_fall.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,86 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        in the WXW they call me “The Golden Geek”<br />
+                        my partner Roy is just “The Warlord”<br />
+                        [hero and villain] we wrestle each other every night<br />
+                        in the capillary towns bleeding off the [exit ramps] of I-76<br />
+                        in the rough ground between Pittsburg and Philly<br />
+                        eating cheeseburgers [at the Big Boy’s] sleeping<br />
+                        in the wood motels with the [road Bettys]<br />
+                        of the muscular cupped bras and [7-11 coffee]<br />
+                        sometimes with child in tow and [Tonight]<br />
+                        we’re putting on the show in the basketball gym<br />
+                        of another [Herbert Hoover High] or [VFW hall]<br />
+                        in the archeological remains of an iron town<br />
+                        where we will build the [ring] and Roy<br />
+                        will set up a [dressing room] in the men’s room<br />
+                        the way he learned to set up a bedroom<br />
+                        in the back of a [Humvee] or the way I landed here<br />
+                        as a [tech worker] when my code was [shipped] overseas<br />
+                        and they taught us the [holds] how to fake a fall<br />
+                        [turn ketchup into blood] throw a punch that never lands<br />
+                        and they gave me a finishing move [“The Geek Leap”]<br />
+                        where I come summersaulting off the ropes<br />
+                        my [gold lamé] trunks flying wild under the lights<br />
+                        and you can smell [the popcorn] on the floor<br />
+                        and see [the fists] of patrons coming into bloom<br />
+                        all along the audience of tin metal chairs<br />
+                        and Roy is holding back a laugh as I land on him<br />
+                        to conclude [our drama] in the [usual way]<br />
+                        and there’s a road outside [going back to the highway]<br />
+                        where the stars [fall into place] and the moon<br />
+                        holds up its gold belt as Champion<br />
+                        of the Pennsylvania night<br />
+                    </p>
+                    <p class="publication">
+                        First Published in Typishly
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
