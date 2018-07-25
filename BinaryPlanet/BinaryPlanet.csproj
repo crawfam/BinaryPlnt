@@ -2679,6 +2679,8 @@
     <Content Include="Views\Poems\last_meal_at_blue_earth_cafe.cshtml" />
     <Content Include="Views\Poems\audio_tour_of_a_box.cshtml" />
     <Content Include="Views\Poems\what_is_it_like_to_lose_yourself.cshtml" />
+    <Content Include="Views\Poems\sex_and_its_discontents.cshtml" />
+    <Content Include="Views\Poems\love_in_the_age_of_communism.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
