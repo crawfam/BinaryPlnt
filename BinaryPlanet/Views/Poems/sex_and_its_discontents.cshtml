@@ -1,0 +1,75 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                    the best metaphor for &lt;sex &gt; is sex<br />
+                    the &lt;dream [state] &gt; of &lt;skin [coiling] &gt;<br />
+                    and &lt;re-[calling] &gt; those &lt;air [conditioned] &gt;<br />
+                    [hours] of our [Route 50 &lt;McSleep] &gt;]<br />
+                    swaddled in the &lt;company picnic [rapture] &gt;<br />
+                    of another [Sunday &lt;nighter &gt;] happily <br />
+                    &lt;humping [along] &gt; into our [post-coital]<br />
+                    future [satisfied] like a lion rolling over<br />
+                    to &lt;slaughter [his cubs] &gt; or the way<br />
+                    a Columbia River grizzly will &lt;swallow [whole] &gt;<br />
+                    another fattened salmon or a &lt;portly [king] &gt;<br />
+                    will decree the death of all first born males<br />
+                    &lt;answering [the call] &gt; of &lt;DNA &gt;<br />
+                    like an angel ascending the &lt;double [helix] &gt;<br />
+                    ladder or an &lt;unwitting [Abraham] &gt;<br />
+                    and a God with one commandment: <br />
+                    &lt;[copy] [copy] &gt; <><><><><> &lt;[copy]  &gt;<br />
+                    my [workshop] says we don’t [write]<br />
+                    enough about &lt;sex &gt; like [that night]<br />
+                    on the three legged stool [that day]<br />
+                    you walked in after work [that morning]<br />
+                    you aroused me so fast &lt;making [me] &gt;<br />
+                    have to [think] “Wittgenstein, Ludwig”
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
