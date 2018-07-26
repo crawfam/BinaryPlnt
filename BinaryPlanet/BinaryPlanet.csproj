@@ -2713,6 +2713,7 @@
     <Content Include="Views\Poems\the_cosmological_constant.cshtml" />
     <Content Include="Views\Poems\division_by_zero.cshtml" />
     <Content Include="Views\Poems\the_meaning_of_snow.cshtml" />
+    <Content Include="Views\Poems\the_love_poem_of_an_average_man.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
