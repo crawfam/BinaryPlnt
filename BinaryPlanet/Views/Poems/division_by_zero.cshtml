@@ -1,0 +1,82 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        Fear is [translucent] as the thin [reductive] sun<br />
+                        uncovers a warren of slant suburban roofs<br />
+                        as it [pokes slothful] round [the fenders] of SUVs<br />
+                        parked [white] and [black] in prearranged slots<br />
+                        the way coffins [are bought and sold] with extra<br />
+                        [holes] for coffee cups as the external day comes<br />
+                        rollicking to life in each [family wigwam] where<br />
+                        the Eskimos of dawn are packed and patted down<br />
+                        [equipped] and renumbered in [loose hoodies]<br />
+                        barely a [breakfast bowl] un-spooned in sync<br />
+                        with the unsung songs of digital clocks pacing<br />
+                        the [unsuspecting] eavesdropper [the] sleep walker<br />
+                        [the] dream slacker [the] old leashed couple<br />
+                        waving hapless to [the] afternoon shoppers<br />
+                        clutching silk purses spun out of world markets<br />
+                        prepared by the skeletal fingers [of the poor]<br />
+                        in the last of the Holy Lands still exploding<br />
+                        on screens of waxed horror as the null day<br />
+                        counts down the dusk hours [in odds and evens]<br />
+                        like calendar pages in a [Hollywood] script<br />
+                        and just getting ahead is becoming harder<br />
+                        amid so many [neighbors] marching horizontally<br />
+                        in [standard deviation] tightening the cables<br />
+                        [rolling out] the [bandwidth] coming home<br />
+                        to a factory of [endless open doors] before<br />
+                        parking the devices [filtering the windows]<br />
+                        [looking in] on the appliances until [it’s time]<br />
+                        to gaze up [to be narcotized] by the whirl<br />
+                        of a ceiling fan [counting backwards from zero]<br />
+                        shaken by the stillness [breathing until breathless]
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

@@ -1,0 +1,83 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        then you notice the hair tonic<br />
+                        curl on a sharp-parted head and<br />
+                        the pencil mustache, but mostly<br />
+                        it’s that all the men are white<br />
+                    </p>
+                    <p>
+                        with pillbox women arranged in<br />
+                        Edith Head poses, chatting and<br />
+                        flattering, shushing away an anger<br />
+                        none of them can name and
+                    </p>
+                    <p>
+                        sometimes they’ll be in a club<br />
+                        with dry martinis and evening wear<br />
+                        and a black man will come dancing<br />
+                        down the aisle all banjo, banjo,
+                    </p>
+                    <p>
+                        banjo, or a cinemascope Moses<br />
+                        will come down from the mountain<br />
+                        in a cloud of special effects,<br />
+                        like Custer at another last stand
+                    </p>
+                    <p>
+                        and I’ll be here snorting Vicodin<br />
+                        off the coffee table with three<br />
+                        remotes, just changing channels<br />
+                        and waiting between the stations.
+                    <p/>
+                    <p>
+                        First Published in TextURE
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

@@ -1,0 +1,83 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <br />
+                    <p>
+                        My sweet Dorothea with the moon faced dimples<br />
+                        running out like the Sun<br />
+                        winding down like the Earth
+                    </p>
+                    <p>
+                        spiraling out of love’s elliptic bond.
+                    </p>
+                    <p>
+                        Gone, Dottie, like a selfish comet<br />
+                        taking back its mud and ice to some dark shelf
+                    </p>
+                    <p>
+                        leaving only streaks like the madness<br />
+                        of your afternoon hair
+                    </p>
+                    <p>
+                        or the growing separation of stars<br />
+                        each moving out, going it alone<br />
+                        pulling away.
+                    </p>
+                    <p>
+                        Dot, your heavens collapsed<br />
+                        into a black hole show
+                    </p>
+                    <p>
+                        a fraught singularity, turning in<br />
+                    </p>
+                    <p>
+                        like a blush of dark energy trying<br />
+                        to still the fleeing light.
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

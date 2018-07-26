@@ -1,0 +1,75 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <br />
+                    <p>
+                        Tina Turner begins her Proud Mary in slow motion<br />
+                        which our spin class takes as a hill<br />
+                        but it’s really just a big turn of the resistance knob<br />
+                        with Ike Turner singing in low gear,<br />
+                        his wife warning of a rough finish.
+                    </p>
+                    <p>
+                        On the lead bike, Lorenita is battling<br />
+                        breast cancer, calling for more resistance<br />
+                        with the horns coming in, going faster<br />
+                        her body metastasizing as the Ikettes<br />
+                        come shing-a-linging down the rows<br />
+                        of Saturday cyclists. Lorenita reminds us<br />
+                        to save a little for the end.
+                    </p>
+                    <p>
+                        Who of us can say, I don’t have cancer?<br />
+                        The  class ends in jumps, out of the saddle.<br />
+                        It’s the hardest move. Peddling up river<br />
+                        in a wake of trumpets and drums<br />
+                        until the riverboat queen lands ashore,<br />
+                        and leaving nothing on the bike, Lorenita<br />
+                        lets us go.
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

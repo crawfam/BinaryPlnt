@@ -1,0 +1,81 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        What took you so long?<br />
+                        It was your turn to pick up the kids.<br />
+                        We have to talk.<br />
+                        I’m looking for an apartment.
+                    </p>
+
+                    <p>
+                        You were supposed to get the kids.<br />
+                        I’m seeing a lawyer.<br />
+                        I’ve found an apartment.<br />
+                        They’ll never forgive us.
+                    </p>
+                    <p>
+                        I saw the lawyer.<br />
+                        What did he say?<br />
+                        They’ll never forgive us.<br />
+                        I’m moving out June 1.
+                    </p>
+                    <p>
+                        What can you say.<br />
+                        Here are the keys.<br />
+                        I’m moving out June 1.<br />
+                        Don’t let them know.
+                    </p>
+                    <p>
+                        Here are the keys:<br />
+                        We needed to talk.<br />
+                        We can’t let them know.<br />
+                        What took us so long?
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

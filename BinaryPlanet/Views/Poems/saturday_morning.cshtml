@@ -1,0 +1,72 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-8">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        and we were [walking through the alley] between the [coffee shop] and<br />
+                        the [Salvador Market] with the [smell of trash] from a [damp green dumpster]<br />
+                        and it was his [first haircut] and I gripped his small [unpredictable] hand<br />
+                        and there were [a couple dozen birds] up on a wire and the sidewalk<br />
+                        was [lined in long shadows] and we went into the [barber shop]<br />
+                        [together] because it was [his first haircut] and they [had  a special seat]<br />
+                        for him  and the [scissors] sounded in taut metal [squeaks] as [the clippings] fell<br />
+                        silently to the floor and his [small tongue] came out to bear the barber’s work<br />
+                        and [when it was done] they found a piece of licorice [in a cup]<br />
+                        near a [pile of fresh towels] placed square on the barber’s white shelf<br />
+                        and [the floor] was swept clean with a [wide flat broom] and we went out<br />
+                        and [I took his hand] again and a [shine] had come to the windows<br />
+                        of the stores and the shadows on the street had [pulled back]<br />
+                        a little [and we both looked up] at the wire [and the birds] had left<br />
+                        and we [walked back into the alley] where the [morning] was disappearing<br />
+                        into the shade between the stores
+                    </p>
+                    <p class="publication">
+                        First Published in Mothers Always Write
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

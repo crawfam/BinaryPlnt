@@ -1,0 +1,80 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        I’ll [stop the car] in West Virginia<br />
+                        off some [back road] shoulder<br />
+                        by an old [brown] building<br />
+                        wasting in [rainwater]<br />
+                        like a [swollen head] resting<br />
+                        on a [cinderblock collar] broken<br />
+                        [hole] for a [door] [the mountain]<br />
+                        behind it rife with all manner<br />
+                        of [dead] thing or [creature]<br />
+                        and [this place] with its moist odor<br />
+                        of [mold] and [soiled paper]<br />
+                        it is [here] I remember the city<br />
+                        [cars] with their [white hot eyes]<br />
+                        and [roaring horns] charging into<br />
+                        every [inch] of space and the [glass]<br />
+                        sown into the scratched night<br />
+                        [but mostly] it’s the faces<br />
+                        on the underground trains<br />
+                        [stern] but with a shared sense<br />
+                        of [shame] with [eyes]<br />
+                        struck dumb and [mouths] in flat<br />
+                        retreat [saying to themselves]<br />
+                        “this is how we are” riding a train<br />
+                        [going to work] there was a woman<br />
+                        in a [chestnut beret] she was<br />
+                        gathering her things as if telling me<br />
+                        we can’t stay on forever
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

@@ -1,0 +1,69 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        this is snow<br />
+                        think of the worlds<br />
+                        hypnotically falling into place<br />
+                        shards of paper in windblown sheets<br />
+                        up and down east and west across the plains<br />
+                        the lit cities beaming the wild rivers<br />
+                        of trees their cupped palms bidding<br />
+                        every autonomous jot giving way freely<br />
+                        descending in infinite mathematical<br />
+                        signals brandishing the empirical<br />
+                        scars of each irreversible path<br />
+                        think of the worlds it took<br />
+                        the cataclysms the upheavals<br />
+                        to be weightless to snow<br />
+                        to be snow and then<br />
+                        be snow again
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

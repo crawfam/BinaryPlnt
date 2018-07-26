@@ -1,0 +1,81 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <br />
+                    <p>
+                        With three marathons under my belt, I knew the drill.<br />
+                        Her training wheels had just come off so she could ride<br />
+                        beside me on my six mile runs down Riverside Drive.
+                    </p>
+                    <p>
+                        The ZooMonkey had escaped from Central Park<br />
+                        to set up a superhero fortress for mutant children<br />
+                        under the visiting team dugout at Yankee Stadium.
+                    </p>
+                    <p>
+                        Not much of an origin story, it served the miles<br />
+                        as we passed the tale back and forth, with me avoiding<br />
+                        pavement puddles and her riding into the splashes.
+                    </p>
+                    <p>
+                        Now the climax of these stories would invariably<br />
+                        find the ZooMonkey trapped by the terrible, fiendish Miller<br />
+                        who used a giant millstone to grind the bones of children.
+                    </p>
+                    <p>
+                        That fall we rescued the ZooMonkey countless times<br />
+                        on our jaunts along the white-capped Hudson.  Yet for all my<br />
+                        offered happy endings, she eventually came to insist
+                    </p>
+                    <p>
+                        that the ZooMonkey be caught and brought to the mill<br />
+                        to be claimed by the Miller’s stone. I finished the marathon<br />
+                        that year in a time of 3.18. I never ran it faster.
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

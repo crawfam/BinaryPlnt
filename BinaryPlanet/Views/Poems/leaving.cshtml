@@ -1,0 +1,90 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        In my last days in that town I stole a bike<br />
+                        right outside the Rite-Aid. I took it<br />
+                        to the places I wanted to remember<br />
+                        like a dog marking out old ground.
+                    </p>
+                    <p>
+                        To the junk yard cars where I first<br />
+                        almost got laid. Then the  fort we built<br />
+                        in back of the burned-down house<br />
+                        where I finally did.
+                    </p>
+                    <p>
+                        I didn’t want to see the people<br />
+                        just the things. There would be<br />
+                        new people. They just come at you.<br />
+                        You can’t tell why. They just do.
+                    </p>
+                    <p>
+                        I went to the school yard<br />
+                        to look between the chain links.<br />
+                        Spring days of outdoor gym,<br />
+                        partying by the handball wall.
+                    </p>
+                    <p>
+                        Past the artificial pond to the Sears<br />
+                        of my commission-salesman dad.<br />
+                        Then on to see the rainwater draining<br />
+                        off the worn stores of Main Street.
+                    </p>
+                    <p>
+                        I peddled up to Lookout Hill<br />
+                        a year since I’d made up my mind<br />
+                        to move on. With nowhere else to go<br />
+                        I left the bike for someone else.
+                    </p>
+                    <p class="publication">
+                        First Published in District Lit
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

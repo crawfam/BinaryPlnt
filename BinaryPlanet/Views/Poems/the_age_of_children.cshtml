@@ -1,0 +1,104 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0011 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        A boy will make a fort by the river.<br />
+                        Don’t take much work.<br />
+                        We just climbed up a warehouse shaft<br />
+                        where we took an oath of blood.<br />
+                        Refusing or running was just not cool<br />
+                        so a boy like Billy would be endlessly needled.
+                    </p>
+                    <p>
+                        We used a Bic lighter to sterilize the needle.<br />
+                        You could feel the night lighting up the river.<br />
+                        The heat inside the skin, the air so cool.<br />
+                        Then came Tommy proposing a bit of work,<br />
+                        “You know guys, we got to draw a little blood,”<br />
+                        and I knew it’d be Billy getting the shaft.
+                    </p>
+                    <p>
+                        The plan was to push him down the shaft<br />
+                        and it didn’t seem hard to thread that needle.<br />
+                        “It won’t kill him just make a little blood.”<br />
+                        He’d think twice before coming down to our river,<br />
+                        that crazy Billy, quite a piece of work.<br />
+                        We’d stop him from thinking he was so cool.
+                    </p>
+                    <p>
+                        Down on the street we were playing it cool.<br />
+                        Tommy would get him up to the shaft.<br />
+                        I’d kick out the ladder to make it all work.<br />
+                        We passed a mess of condoms and needles<br />
+                        up to the place where you first see the river.<br />
+                        Billy went down. There was stillness, then blood.<br />
+                    </p>
+                    <p>
+                        Nobody talked, we were bound by blood;<br />
+                        when the cops came around all was cool.<br />
+                        And Billy survived that night on the river.<br />
+                        The ambulance crew working under the shaft<br />
+                        brought him back with an IV needle.<br />
+                        For all of us just another night’s work.
+                    </p>
+                    <p>
+                        These days when I think back on our work<br />
+                        there’s something there that’s still in my blood.<br />
+                        As a man, I know how to thread the needle.<br />
+                        People are people. Things happen. I’m cool.<br />
+                        And I’m not going to let anyone give me the shaft<br />
+                        or sit by and watch my life go down the river.
+                    </p>
+                    <p>
+                        I remember the river, the prick of the needle.<br />
+                        A boy will do what works to stay cool,<br />
+                        looking for a shaft of light in a city of blood.
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
