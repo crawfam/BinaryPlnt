@@ -61,7 +61,7 @@ namespace BinaryPlanet.ViewModels
             {
                 if (_poem.Sequence == _maxSeq)
                 {
-                    return _minSeq;
+                    return _context.Poems.Where(p => p.Sequence == _minSeq).Select(p => p.Id).Single();
                 }
                 else
                 {
@@ -78,7 +78,7 @@ namespace BinaryPlanet.ViewModels
             {
                 if (_poem.Sequence == _minSeq)
                 {
-                    return _maxSeq;
+                    return _context.Poems.Where(p => p.Sequence == _maxSeq).Select(p => p.Id).Single();
                 }
                 else
                 {

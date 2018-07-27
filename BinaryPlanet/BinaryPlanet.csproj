@@ -249,11 +249,13 @@
     <Content Include="Content\images\away\and_now_a_word_from_the_management.jpg" />
     <Content Include="Content\images\away\audio_tour_of_a_box.JPG" />
     <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
+    <Content Include="Content\images\away\girl_in_a_supermarket.jpg" />
     <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
     <Content Include="Content\images\away\from_jrsey_cty_with_love_and_squalor.jpg" />
     <Content Include="Content\images\away\joe_mccarthy.jpg" />
     <Content Include="Content\images\away\last_meal_at_blue_earth_cafe.jpg" />
+    <Content Include="Content\images\away\leaving.jpg" />
     <Content Include="Content\images\away\love_in_the_age_of_communism.jpg" />
     <Content Include="Content\images\away\machine_language.jpg" />
     <Content Include="Content\images\away\oh_columbia.jpg" />
@@ -2027,9 +2029,12 @@
     <Content Include="Content\images\away\spy_verses_spy.JPG" />
     <Content Include="Content\images\away\taking_the_fall.jpg" />
     <Content Include="Content\images\away\television_is_not_for_everyone.jpg" />
+    <Content Include="Content\images\away\they_almost_look_like_us.jpg" />
     <Content Include="Content\images\away\the_convergence.JPG" />
+    <Content Include="Content\images\away\the_meaning_of_snow.jpg" />
     <Content Include="Content\images\away\the_singing_commuters.jpg" />
     <Content Include="Content\images\away\the_sonnosphere.jpg" />
+    <Content Include="Content\images\away\think_of_the_children.jpg" />
     <Content Include="Content\images\away\twilight_zone_reboot.JPG" />
     <Content Include="Content\images\away\what_is_it_like_to_lose_yourself.jpg" />
     <Content Include="Content\images\away\when_victor_and_linden_got_married.jpg" />
