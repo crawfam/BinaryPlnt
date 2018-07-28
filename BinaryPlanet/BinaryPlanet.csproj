@@ -2028,8 +2028,9 @@
     <Content Include="Content\fonts\ionicons\src\xbox.svg" />
     <Content Include="Content\images\away\fugue_before_lunch.JPG" />
     <Content Include="Content\images\away\brain_imaging.jpg" />
-    <Content Include="Content\images\away\roadside_reckoning.jpg" />
+    <Content Include="Content\images\away\retiree.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
+    <Content Include="Content\images\away\saturday_morning.jpg" />
     <Content Include="Content\images\away\sex_and_its_discontents.jpg" />
     <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines.JPG" />
     <Content Include="Content\images\away\spy_verses_spy.JPG" />
@@ -2715,7 +2716,7 @@
     <Content Include="Views\Poems\joe_mccarthy.cshtml" />
     <Content Include="Views\Poems\taking_the_fall.cshtml" />
     <Content Include="Views\Poems\the_age_of_children.cshtml" />
-    <Content Include="Views\Poems\roadside_reckoning.cshtml" />
+    <Content Include="Views\Poems\retiree.cshtml" />
     <Content Include="Views\Poems\leaving.cshtml" />
     <Content Include="Views\Poems\they_almost_look_like_us.cshtml" />
     <Content Include="Views\Poems\think_of_the_children.cshtml" />
