@@ -12,7 +12,7 @@ namespace BinaryPlanet.ViewModels
         private readonly int _minSeq;
         private readonly int _maxSeq;
         private readonly ApplicationDbContext _context;
-        private readonly List<int> _sequenceNumbers;
+        private readonly List<int?> _sequenceNumbers;
 
         public PoemViewModel(int Id)
         {
@@ -22,10 +22,10 @@ namespace BinaryPlanet.ViewModels
 
             _fileName = string.IsNullOrEmpty(_poem.SpecialName) ? _poem.Name.ToLower().Replace(" ", "_") : _poem.SpecialName;
 
-            _minSeq = _context.Poems.Select(p => p.Sequence).Min();
-            _maxSeq = _context.Poems.Select(p => p.Sequence).Max();
+            _minSeq = (int) _context.Poems.Select(p => p.Sequence).Min();
+            _maxSeq = (int) _context.Poems.Select(p => p.Sequence).Max();
 
-            _sequenceNumbers = _context.Poems.OrderBy(p => p.Sequence).Select(p => p.Sequence).ToList();
+            _sequenceNumbers = _context.Poems.Where(p => p.Sequence != null).OrderBy(p => p.Sequence).Select(p => p.Sequence).ToList();
 
         }
 
@@ -66,7 +66,7 @@ namespace BinaryPlanet.ViewModels
                 else
                 {
                     int index = _sequenceNumbers.IndexOf(_poem.Sequence);
-                    int nextSequenceNum = _sequenceNumbers[index + 1];
+                    int nextSequenceNum = (int) _sequenceNumbers[index + 1];
                     return _context.Poems.Where(p => p.Sequence == nextSequenceNum).Select(p => p.Id).FirstOrDefault();
                 }
             }
@@ -83,7 +83,7 @@ namespace BinaryPlanet.ViewModels
                 else
                 {
                     int index = _sequenceNumbers.IndexOf(_poem.Sequence);
-                    int prevSequenceNum = _sequenceNumbers[index - 1];
+                    int prevSequenceNum = (int) _sequenceNumbers[index - 1];
                     return _context.Poems.Where(p => p.Sequence == prevSequenceNum).Select(p => p.Id).FirstOrDefault();
                 }
             }

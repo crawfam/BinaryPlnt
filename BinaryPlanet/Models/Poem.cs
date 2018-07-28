@@ -9,8 +9,7 @@ namespace BinaryPlanet.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        public int Sequence { get; set; }
+        public int? Sequence { get; set; }
 
         [Required]
         public int Section { get; set; }

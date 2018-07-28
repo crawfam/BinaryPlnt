@@ -224,6 +224,10 @@
     <Compile Include="Migrations\201807241135174_AddBPUserPoemsTableToDatabase.Designer.cs">
       <DependentUpon>201807241135174_AddBPUserPoemsTableToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807281255405_MadeSequenceColumninPoemTableNullable.cs" />
+    <Compile Include="Migrations\201807281255405_MadeSequenceColumninPoemTableNullable.Designer.cs">
+      <DependentUpon>201807281255405_MadeSequenceColumninPoemTableNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -249,6 +253,7 @@
     <Content Include="Content\images\away\and_now_a_word_from_the_management.jpg" />
     <Content Include="Content\images\away\audio_tour_of_a_box.JPG" />
     <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
+    <Content Include="Content\images\away\division_by_zero.jpg" />
     <Content Include="Content\images\away\girl_in_a_supermarket.jpg" />
     <Content Include="Content\images\away\hal_9000.jpg" />
     <Content Include="Content\images\away\happiness.jpg" />
@@ -2023,6 +2028,7 @@
     <Content Include="Content\fonts\ionicons\src\xbox.svg" />
     <Content Include="Content\images\away\fugue_before_lunch.JPG" />
     <Content Include="Content\images\away\brain_imaging.jpg" />
+    <Content Include="Content\images\away\roadside_reckoning.jpg" />
     <Content Include="Content\images\away\santa_clara_server_room.JPG" />
     <Content Include="Content\images\away\sex_and_its_discontents.jpg" />
     <Content Include="Content\images\away\sketch_of_a_poem_in_10_broken_lines.JPG" />
@@ -2030,10 +2036,13 @@
     <Content Include="Content\images\away\taking_the_fall.jpg" />
     <Content Include="Content\images\away\television_is_not_for_everyone.jpg" />
     <Content Include="Content\images\away\they_almost_look_like_us.jpg" />
+    <Content Include="Content\images\away\the_age_of_children.jpg" />
     <Content Include="Content\images\away\the_convergence.JPG" />
+    <Content Include="Content\images\away\the_cosmological_constant.jpg" />
     <Content Include="Content\images\away\the_meaning_of_snow.jpg" />
     <Content Include="Content\images\away\the_singing_commuters.jpg" />
     <Content Include="Content\images\away\the_sonnosphere.jpg" />
+    <Content Include="Content\images\away\the_zoomonkey.jpg" />
     <Content Include="Content\images\away\think_of_the_children.jpg" />
     <Content Include="Content\images\away\twilight_zone_reboot.JPG" />
     <Content Include="Content\images\away\what_is_it_like_to_lose_yourself.jpg" />
@@ -2757,6 +2766,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807241135174_AddBPUserPoemsTableToDatabase.resx">
       <DependentUpon>201807241135174_AddBPUserPoemsTableToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807281255405_MadeSequenceColumninPoemTableNullable.resx">
+      <DependentUpon>201807281255405_MadeSequenceColumninPoemTableNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
