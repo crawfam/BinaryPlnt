@@ -32,7 +32,7 @@ namespace BinaryPlanet.Controllers
                 System.Web.HttpContext.Current.Session["UserName"] = bpUser.FirstName + " " + bpUser.LastName;
 
                 // only mark as read if not already in the database
-                if (!_context.BPUserPoems.Any(s => s.Id == Id && s.BPUserId == bpUser.Id))
+                if (!_context.BPUserPoems.Any(p => p.PoemId == Id && p.BPUserId == bpUser.Id))
                 {
                     // add poem to list of read poems
                     BPUserPoems bpup = new BPUserPoems { BPUserId = bpUser.Id, PoemId = Id };
