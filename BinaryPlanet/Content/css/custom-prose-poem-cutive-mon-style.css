@@ -90,15 +90,15 @@ h2:after {
 /* LINKS */
 
 #poem a:link {
-    color: #000000 !important;
+    color: blue !important;
 }
 
 #poem a:visited {
-    color: green !important;
+    color: blue !important;
 }
 
 #poem a:hover {
-    color: blue !important;
+    color: red !important;
 }
 
 #poem a:active {

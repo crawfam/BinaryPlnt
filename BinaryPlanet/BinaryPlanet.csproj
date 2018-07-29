@@ -243,7 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
-    <Content Include="Content\css\custom-sonnet-libre-baskerville-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
     <Content Include="Content\css\custom-libre-baskerville-style.css" />
