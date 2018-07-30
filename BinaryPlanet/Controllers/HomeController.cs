@@ -49,6 +49,29 @@ namespace BinaryPlanet.Controllers
             return View("TableOfContents", poems);
         }
 
+        public ActionResult Reset()
+        {
+            TableOfContentsViewModel poems;
+
+            if (Request.IsAuthenticated)
+            {
+                string userId = User.Identity.GetUserId();
+                int BPUserId = _context.BPUsers.Where(s => s.AppId == userId).SingleOrDefault().Id;
+
+                poems = new TableOfContentsViewModel(BPUserId);
+            }
+            else
+            {
+                poems = new TableOfContentsViewModel();
+            }
+
+
+            ViewBag.Title = "Table Of Contents";
+            return View("TableOfContents", poems);
+        }
+
+
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

@@ -15,10 +15,18 @@
 <section class="slice sct-color-2 bb">
     <div class="container">
         <div class="row">
-            <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>            
+            <h1 style="text-align:center;" class="parallax-title c-white">Table of Contents</h1>
+        </div>
+        <div class="row">
+            <div style="float:right;">
+                @Html.ActionLink("Reset", "Reset", "Home", null, new { @class = "btn btn-1" })
+            </div>
+        </div>
+        <div class="row">
+
             <div class="col-md-3">
                 <h1 class="parallax-title c-white">0001</h1>
-    
+
 
                 @foreach (BinaryPlanet.Models.Poem p in Model.Section1Poems)
                 {
