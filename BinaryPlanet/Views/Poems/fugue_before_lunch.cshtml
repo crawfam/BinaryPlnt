@@ -30,7 +30,7 @@
 
                 <h1 class="title">@Model.Name</h1>
                 <p>
-                    Computer code is written<br />
+                    Computer @Html.ActionLink("code", "poem","poems", new {id = 14}, null) is written<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in lines not much different<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from what you see here<br />
                 </p>
@@ -55,7 +55,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;writing dots on lined sheets
                 </p>
                 <p>
-                    despite the dying <a href="#">children</a>, the loss<br />
+                    despite the dying @Html.ActionLink("children", "poem", "poems", new { id = 32 }, null), the loss<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of wife, parents, the odor of rancid food<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at his wood desk, writing<br />
                 </p>
