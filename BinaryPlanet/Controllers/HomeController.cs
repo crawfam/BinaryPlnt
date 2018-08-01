@@ -58,6 +58,14 @@ namespace BinaryPlanet.Controllers
                 string userId = User.Identity.GetUserId();
                 int BPUserId = _context.BPUsers.Where(s => s.AppId == userId).SingleOrDefault().Id;
 
+                foreach (BPUserPoems userPoem in _context.BPUserPoems.Where(p => p.BPUserId == BPUserId))
+                {
+                    _context.BPUserPoems.Remove(userPoem);
+                }
+
+                _context.SaveChanges();
+
+
                 poems = new TableOfContentsViewModel(BPUserId);
             }
             else
