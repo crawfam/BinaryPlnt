@@ -51,6 +51,24 @@ namespace BinaryPlanet.Controllers
 
         public ActionResult Reset()
         {
+
+
+            /////////////////////////////////////////////
+
+
+            //foreach (Poem p in _context.Poems)
+            //{
+            //     p.Sequence = p.Sequence * 100;                
+            //}
+
+            //_context.SaveChanges();
+
+
+            //////////////////////////////////////////////
+
+
+
+
             TableOfContentsViewModel poems;
 
             if (Request.IsAuthenticated)

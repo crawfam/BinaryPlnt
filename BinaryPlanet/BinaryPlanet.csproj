@@ -265,7 +265,7 @@
     <Content Include="Content\images\away\machine_language.jpg" />
     <Content Include="Content\images\away\oh_columbia.jpg" />
     <Content Include="Content\images\away\one_night_in_the_dharma_lounge.JPG" />
-    <Content Include="Content\images\away\meet_the_stanzas.JPG" />
+    <Content Include="Content\images\away\the_stanzas.JPG" />
     <Content Include="Content\ajax\portfolio\loadMore-1.html" />
     <Content Include="Content\ajax\portfolio\loadMore-2.html" />
     <Content Include="Content\ajax\portfolio\loadMore.html" />
@@ -2681,7 +2681,7 @@
     <Content Include="Views\Poems\fugue_before_lunch.cshtml" />
     <Content Include="Views\Poems\santa_clara_server_room.cshtml" />
     <Content Include="Views\Poems\brain_imaging.cshtml" />
-    <Content Include="Views\Poems\meet_the_stanzas.cshtml" />
+    <Content Include="Views\Poems\the_stanzas.cshtml" />
     <Content Include="Views\Poems\sketch_of_a_poem_in_10_broken_lines.cshtml" />
     <Content Include="Views\Poems\_PoemNavFooter.cshtml" />
     <Content Include="Views\Poems\one_night_in_the_dharma_lounge.cshtml" />
