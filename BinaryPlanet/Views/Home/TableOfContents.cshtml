@@ -25,7 +25,8 @@
         <div class="row">
 
             <div class="col-md-3">
-                <h1 class="parallax-title c-white">0001</h1>
+
+                <h1 class="parallax-title c-white"><a href="@Url.Action("SectionOne", "Poems")">0001</a></h1>
 
 
                 @foreach (BinaryPlanet.Models.Poem p in Model.Section1Poems)
@@ -48,13 +49,14 @@
                             </p>*@
                         </div>
                     </div>
+                    <br />
                 }
 
             </div> <!-- End of Section 0001 -->
             <!-- SECTION 0010 -->
 
             <div class="col-md-3">
-                <h1 class="parallax-title c-white">0010</h1>
+                <h1 class="parallax-title c-white"><a href="@Url.Action("SectionTwo", "Poems")">0010</a></h1>
 
                 @foreach (BinaryPlanet.Models.Poem p in Model.Section2Poems)
                 {
@@ -76,12 +78,13 @@
                             </p>*@
                         </div>
                     </div>
+                    <br />
                 }
 
             </div> <!-- END OF SECTION 0010  -->
 
             <div class="col-md-3">
-                <h1 class="parallax-title c-white">0011</h1>
+                <h1 class="parallax-title c-white"><a href="@Url.Action("SectionThree", "Poems")">0011</a></h1>
 
                 @foreach (BinaryPlanet.Models.Poem p in Model.Section3Poems)
                 {
@@ -103,6 +106,7 @@
                             </p>*@
                         </div>
                     </div>
+                    <br />
                 }
 
 
@@ -111,7 +115,7 @@
             <!-- END OF SECTION 0011 -->
 
             <div class="col-md-3">
-                <h1 class="parallax-title c-white">0100</h1>
+                <h1 class="parallax-title c-white"><a href="@Url.Action("SectionFour", "Poems")">0100</a></h1>
 
                 @foreach (BinaryPlanet.Models.Poem p in Model.Section4Poems)
                 {
