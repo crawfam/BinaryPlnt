@@ -1,0 +1,96 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <br />
+                    <p>
+                        I never look at it. I always skip past<br />
+                        the woodcut portrait in Leaves of Grass.
+                    </p>
+                    <p>
+                        I think it's a woodcut, but I can't say.<br />
+                        I'm typing into a blank laptop screen.
+                    </p>
+                    <p>
+                        Nor do I know what edition. Or what year.<br />
+                        I think he's got a hat on and his arms are crossed.<br />
+                        He may also be balding. I'm not sure.<br />
+                        <br />
+                        Maybe a funky belt hangs loose around<br />
+                        his middle aged waist. And out there on the
+                    </p>
+                    <p>
+                        edges I imagine there are small ink dots,<br />
+                        sort of fading around the lines. I don't know
+                    </p>
+                    <p>
+                        if there are wrinkles around his eyes. And<br />
+                        even if there were, I think they'd only be
+                    </p>
+                    <p>
+                        suggested. Maybe his arms are open wide,<br />
+                        hat in hand, standing like my grandfather
+                    </p>
+                    <p>
+                        who worked a linotype machine in lower <br />
+                        Manhattan. I wish I could show you both<br />
+                        this device I'm working on. The way
+                    </p>
+                    <p>
+                        it answers all these questions, but I'm not<br />
+                        going to Google. Instead, I imagine you posing
+                    </p>
+                    <p>
+                        and now someone is asking you to hold still<br />
+                        and you, Walt Whitman, are looking at us.
+                    </p>
+                    <p class="publication">
+                        First published in Mannequin Haus
+                    </p>
+
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

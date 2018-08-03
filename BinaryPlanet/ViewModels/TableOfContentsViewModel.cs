@@ -18,7 +18,7 @@ namespace BinaryPlanet.ViewModels
         {
             get
             {
-                return _poems.Where(s => s.Section == 1).ToList();
+                return _poems.Where(s => s.Section == 1).OrderBy(p => p.Sequence).ToList();
             }
                 
         }
@@ -27,7 +27,7 @@ namespace BinaryPlanet.ViewModels
         {
             get
             {
-                return _poems.Where(s => s.Section == 2).ToList();
+                return _poems.Where(s => s.Section == 2).OrderBy(p => p.Sequence).ToList();
             }
 
         }
@@ -36,7 +36,7 @@ namespace BinaryPlanet.ViewModels
         {
             get
             {
-                return _poems.Where(s => s.Section == 3).ToList();
+                return _poems.Where(s => s.Section == 3).OrderBy(p => p.Sequence).ToList();
             }
 
         }
@@ -45,7 +45,7 @@ namespace BinaryPlanet.ViewModels
         {
             get
             {
-                return _poems.Where(s => s.Section == 4).ToList();
+                return _poems.Where(s => s.Section == 4).OrderBy(p => p.Sequence).ToList();
             }
 
         }

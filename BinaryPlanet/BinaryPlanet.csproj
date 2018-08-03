@@ -2047,6 +2047,7 @@
     <Content Include="Content\images\away\the_zoomonkey.jpg" />
     <Content Include="Content\images\away\think_of_the_children.jpg" />
     <Content Include="Content\images\away\twilight_zone_reboot.JPG" />
+    <Content Include="Content\images\away\walt_whitman_ekphrastic.jpg" />
     <Content Include="Content\images\away\what_is_it_like_to_lose_yourself.jpg" />
     <Content Include="Content\images\away\when_victor_and_linden_got_married.jpg" />
     <Content Include="Content\images\away\years_later_frank_ohara.jpg" />
@@ -2730,6 +2731,7 @@
     <Content Include="Views\Poems\division_by_zero.cshtml" />
     <Content Include="Views\Poems\the_meaning_of_snow.cshtml" />
     <Content Include="Views\Poems\the_love_poem_of_an_average_man.cshtml" />
+    <Content Include="Views\Poems\walt_whitman_ekphrastic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
