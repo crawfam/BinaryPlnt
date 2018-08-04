@@ -1,0 +1,91 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-libre-baskerville-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                        <p>                       
+                        the generators failed<br />
+                        streetlights went dark<br />
+                        afraid to go out<br />
+                        they stopped reading news<br />
+                        had no flashlights<br />
+                        could not work a compass <br />
+                        no longer kept books<br />
+                        forgot how to sew<br />
+                        could not tie a knot<br />
+                        their trees were falling<br />
+                        they had no seeds<br />
+                        the doors were locked<br />
+                        no telephone calls<br />
+                        they stopped writing letters<br />
+                        walked through debris<br />
+                        could not see the stars<br />
+                        were afraid of the sun<br />
+                        their roads were crumbling<br />
+                        the windows were shut<br />
+                        they could not tell a joke<br />
+                        preferred to stay in<br />
+                        danced without partners<br />
+                        did not go to stores<br />
+                        wary of others<br />
+                        their schools were guarded<br />
+                        they stood by their guns<br />
+                        kept children inside<br />
+                        breathed difficult air<br />
+                        it was hard to find clocks<br />
+                        they didn't buy music<br />
+                        rarely looked out<br />
+                        someone said it was raining<br />
+                        no one could tell<br />
+                        they thought it was cold<br />
+                        it was colder<br />
+                        </p>
+                        <p class="publication">
+                            First Published in the Southern Humanities Review<br />
+                            Finalist, Auburn Witness Poetry Prize Honoring Jake Adam York
+                        </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

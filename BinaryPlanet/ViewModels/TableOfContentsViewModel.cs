@@ -77,7 +77,7 @@ namespace BinaryPlanet.ViewModels
         public TableOfContentsViewModel()
         {
             _context = new ApplicationDbContext();
-            _poems = _context.Poems.ToList();
+            _poems = _context.Poems.Where(p => p.Sequence != null).ToList();
         }
 
         public TableOfContentsViewModel(int BPUserId) : this()
