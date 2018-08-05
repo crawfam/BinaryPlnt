@@ -1,0 +1,94 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        [look out!] [look out!]&nbsp;&nbsp;rainbows of<br />
+                        [arrows] candies of crushes [beads]<br />
+                        and bangles [open the vessels] hit it now<br />
+                        [hit it] rack up the [hearts] <br />
+                        wipe out the doubts [do it] now [do it]<br />
+                        run the table [BANG!] you're in love<br />
+                        [BANG!] you're alone [how do you feel?]<br />
+                        [stranded?] [abandoned?] you're on the<br />
+                        next [level] you're a car
+                    </p>
+                    <p>
+                        in [kilometers now] going<br />
+                        [20] [40] [60] [80] [look out!] [look out!]<br />
+                        here comes the BOSS [cigar chewing cupid]<br />
+                        cover the spread [hide your fire] say<br />
+                        ["yes'] ["yes"] ["yes"] only the best<br />
+                        [now is the time] to&nbsp;&nbsp;blow him away<br />
+                        [clean out the cube] wipe out the skies<br />
+                        [20] [40] [60] [80] [look out!] [look out!]<br />
+                        [speed shooting] zits [FIRE!] [FIRE!]<br />
+                        now push those cows over the cliff<br />
+                        [how do you feel?] [stranded?]<br />
+                        [abandoned?]&nbsp;&nbsp;[here's your ride]<br />
+                        you're a flying U
+                    </p>
+                    <p>
+                        [you] did it [you] caused it [was you]<br />
+                        [we know it] [we saw it] was you<br />
+                        [on the phone] talking in twos <br />
+                        [thinking in threes] wearing a mask?<br />
+                        [nothing inside] [look out!] [look out!]<br />
+                        pull it now [get it] and get it again<br />
+                        [how do you feel] [groggy?] [blind?]<br />
+                        [thirsty?] [wasted?] [woozy?] [hateful?]<br />
+                        [hurtful?] [hammered?] [toothless?]<br />
+                        [jealous?] [pious?] [reflective?]<br />
+                        [thoughtful?] [kindly?] [born again?]<br />
+                        [bigot?] [a serf?] [a self?] [look out!]<br />
+                        [look out!] you're dying in twos<br />
+                        [ashes] [ashes] going into overtime<br />
+                        [HONK] if you believe [NOD] if you agree<br />
+                        [WINK] if you have I's<br />
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->
