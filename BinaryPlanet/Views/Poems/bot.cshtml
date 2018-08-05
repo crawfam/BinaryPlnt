@@ -1,0 +1,86 @@
+﻿@model BinaryPlanet.ViewModels.PoemViewModel
+
+@section Styles {
+
+    <link href="~/Content/css/custom-row-equal-sizeer.css" rel="stylesheet" />
+    <link href="~/Content/css/custom-hypertext-poem-josefin-style.css" rel="stylesheet" />
+
+    <title>@Model.Name</title>
+
+}
+    <div class="container">
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                <h1><small>< 0010 ></small></h1>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <div class="block style-3">
+                    <div class="block-image">
+                        <div class="view">
+                            <img src='@Model.FileNameJpg' title="@Model.Name">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-6 Image -->
+
+        </div>
+
+        <div class="row eq-size poem-space col-md-12">
+
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+
+            <div class="col-md-6">
+                <div id="poem">
+                    <h1 class="title">@Model.Name</h1>
+                    <p>
+                        the next day [I] was<br />
+                        [stationed] in a mall<br />
+                        a security detail<br />
+                        [watching as usual] in<br />
+                        [rooms] making movies<br />
+                        EMPLOYEES ONLY<br />
+                        from hidden positions <br />
+                        [hands in the cash box?]<br />
+                        fingers in the [till?] dope<br />
+                        [in the pee test?]
+                    </p>
+                    <p>
+                        the week before [I] was<br />
+                        a stick&nbsp;&nbsp;figure [white man] <br />
+                        working in a [wheel chair]<br />
+                        painted on a [BUTTON] <br />
+                        [watching as usual] saying<br />
+                        ["Wait!"] ["Wait!"] ["Wait!"]<br />
+                        on the [wig store] corner<br />
+                        [pattern matching] faces<br />
+                        on a gray scale spectrum <br />
+                        [skimming through the data]<br />
+                        looking for a [suspect]
+                    </p>
+                    <p>
+                        next I'm in a car [installed]<br />
+                        from a [phone] working<br />
+                        in a parking lot [finding<br />
+                        people's cars] enumerating<br />
+                        spaces [watching as usual]<br />
+                        people wearing suits<br />
+                        [wandering in lines] baffled<br />
+                        and angry [I'm taking it all down]<br />
+                        looking for their [keys]<br />
+                    </p>
+                </div>
+
+            </div> <!-- .col-md-6 Poem -->
+
+            @Html.Partial("_PoemNavFooter")
+            <br /><br />
+
+        </div> <!-- 10 col row  -->
+
+    </div>  <!-- .container -->

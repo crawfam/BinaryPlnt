@@ -253,6 +253,7 @@
     <Content Include="Content\images\away\audio_tour_of_a_box.JPG" />
     <Content Include="Content\images\away\a_non-combatants_vietnam.JPG" />
     <Content Include="Content\images\away\blackout.jpg" />
+    <Content Include="Content\images\away\bot.jpg" />
     <Content Include="Content\images\away\division_by_zero.jpg" />
     <Content Include="Content\images\away\elegy_for_a_spin_instructor.jpg" />
     <Content Include="Content\images\away\girl_in_a_supermarket.jpg" />
@@ -2734,6 +2735,7 @@
     <Content Include="Views\Poems\the_love_poem_of_an_average_man.cshtml" />
     <Content Include="Views\Poems\walt_whitman_ekphrastic.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
+    <Content Include="Views\Poems\bot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
