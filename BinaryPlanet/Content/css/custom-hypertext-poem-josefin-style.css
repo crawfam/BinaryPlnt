@@ -58,7 +58,8 @@ h2 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -88,6 +89,12 @@ h2:after {
 #poem p:last-child {
     margin-bottom: 30px;
     padding-bottom: 30px;
+}
+
+#poem p {
+    line-height: 1.8;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 
