@@ -13,12 +13,12 @@
         padding: 0;
 }
 
-
-.audio {
+ /*tray for audio widget*/
+/*.audio {
     border-style: inset;
     border-color: #C4F5E2;
     border-width: 7px;
-}
+}*/
 
 #poem {
     margin: auto;

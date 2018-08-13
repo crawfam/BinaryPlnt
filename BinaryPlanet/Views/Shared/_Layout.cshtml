@@ -209,7 +209,7 @@
     <!-- Required JSs -->
     <script src="~/Content/js/jquery.js"></script>
     <script src="~/Content/js/jquery-ui.min.js"></script>
-   
+
     <!-- Essential JSs -->
     <script src="~/Content/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/Content/assets/bootstrap/js/tooltip.js"></script>
@@ -268,9 +268,18 @@
         });
     </script>
 
+    <script>
+
+        // jQuery needed for sitewide tooltips
+
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
     <!-- App JS -->
     <script src="~/Content/js/dvs.app.js"></script>
-    
+
 
     @RenderSection("Scripts", false)
 </body>
