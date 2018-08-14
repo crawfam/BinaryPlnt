@@ -46,6 +46,13 @@ namespace BinaryPlanet.ViewModels
             }
         }
 
+        public string FileNameMP3
+        {
+            get
+            {
+                return "../../Content/audio/" + _fileName + ".mp3";
+            }
+        }
 
         public string FileNameView
         {
