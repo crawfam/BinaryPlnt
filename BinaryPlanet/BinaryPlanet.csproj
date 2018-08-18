@@ -242,6 +242,18 @@
     <Compile Include="ViewModels\TableOfContentsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\audio\brain_imaging.mp3" />
+    <Content Include="Content\audio\from_jrsey_cty_with_love_and_squalor.mp3" />
+    <Content Include="Content\audio\fugue_before_lunch.mp3" />
+    <Content Include="Content\audio\hal_9000.mp3" />
+    <Content Include="Content\audio\happiness.mp3" />
+    <Content Include="Content\audio\machine_language.mp3" />
+    <Content Include="Content\audio\one_night_in_the_dharma_lounge.mp3" />
+    <Content Include="Content\audio\santa_clara_server_room.mp3" />
+    <Content Include="Content\audio\sketch_of_a_poem_in_10_broken_lines.mp3" />
+    <Content Include="Content\audio\the_sonnosphere.mp3" />
+    <Content Include="Content\audio\the_stanzas.mp3" />
+    <Content Include="Content\audio\twilight_zone_reboot.mp3" />
     <Content Include="Content\css\custom-hypertext-poem-josefin-style.css" />
     <Content Include="Content\css\custom-prose-poem-cutive-mon-style.css" />
     <Content Include="Content\css\custom-row-equal-sizeer.css" />
@@ -484,7 +496,6 @@
     <Content Include="Content\assets\wow-animation\css\animate.css" />
     <Content Include="Content\assets\wow-animation\js\wow.js" />
     <Content Include="Content\assets\wow-animation\js\wow.min.js" />
-    <Content Include="Content\audio\Brain_Imaging.mp3" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\coming-soon-style.css" />
@@ -2646,7 +2657,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Views\Poems\game_on.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
