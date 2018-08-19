@@ -2094,8 +2094,8 @@
     <Content Include="Content\images\backgrounds\shop-fashion-bg-3.jpg" />
     <Content Include="Content\images\backgrounds\shop-fashion-bg-4.jpg" />
     <Content Include="Content\images\elements\contact-map-1.png" />
-    <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\favicon_visio.png" />
     <Content Include="Content\images\icons\png\set-1\1.png" />
     <Content Include="Content\images\icons\png\set-1\10.png" />
     <Content Include="Content\images\icons\png\set-1\11.png" />
