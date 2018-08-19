@@ -111,5 +111,11 @@ namespace BinaryPlanet.Controllers
 
             return View();
         }
+
+        public ActionResult Error()
+        {
+            return View();
+        }
+
     }
 }

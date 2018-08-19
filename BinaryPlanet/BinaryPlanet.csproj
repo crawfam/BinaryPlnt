@@ -2645,7 +2645,6 @@
     <Content Include="Content\less\variables\variables-one-color.less" />
     <Content Include="Content\less\variables\variables-spray-gray.less" />
     <Content Include="Content\less\variables\variables.less" />
-    <Content Include="WebsiteError.html" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -2752,6 +2751,7 @@
     <Content Include="Views\Poems\walt_whitman_ekphrastic.cshtml" />
     <Content Include="Views\Poems\bot.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
