@@ -234,6 +234,7 @@
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\BPUser.cs" />
     <Compile Include="Models\BPUserPoems.cs" />
+    <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Poem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

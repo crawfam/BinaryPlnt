@@ -1,4 +1,6 @@
-﻿@{
+﻿@model BinaryPlanet.ViewModels.HomePageViewModel
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -9,7 +11,7 @@
         <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
             <!-- Slide background -->
             <img src="~/Content/images/backgrounds/blue_marble.jpg" class="ls-bg" style="width: 100%;" alt="Blue Marble" />
-            
+
             <!-- Center title -->
             <h1 class="ls-l title-lg c-white text-uppercase text-center strong-700" style="width:100%; top:35%; left:50%;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
                 The Binary Planet
@@ -123,8 +125,14 @@
                         The poem that comes to you knows the way. It will stay for a time but not a long time. It needs nothing.
                         <br /> - The Art of the Poem
                     </p>
-                    <div class="row">
-                        <div class="col-md-4">
+
+
+
+
+                    <div class="row"> <!--first row-->
+
+                        <div class="col-xs-1">&nbsp;</div>
+                        <div class="col-xs-5">
                             <div class="block block-image v1">
                                 <div id="carousel-1" class="carousel carousel-2 slide mb-40" data-ride="carousel">
                                     <!-- Indicators -->
@@ -146,7 +154,7 @@
 
                                         <!-- Slide item 2 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/the_stanzas.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/the_sonnosphere.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 3 -->
@@ -156,17 +164,17 @@
 
                                         <!-- Slide item 4 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/sketch_of_a_poem_in_10_broken_lines.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/machine_language.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 5 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/30_second_saga.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/santa_clara_server_room.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 6 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/a_non-combatants_vietnam.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/brain_imaging.jpg" class="rounded" />
                                         </div>
 
                                     </div>
@@ -174,12 +182,12 @@
                                 <div class="block-content">
                                     <h3 class="block-title">Section 0001</h3>
                                     <p>
-                                        Symbolic Logic.
+                                        Symbolic Logic
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xs-5">
                             <div class="block block-image v1">
                                 <div id="carousel-2" class="carousel carousel-2 slide mb-40" data-ride="carousel">
                                     <!-- Indicators -->
@@ -189,32 +197,38 @@
                                         <li data-target="#carousel-2" data-slide-to="2" class=""></li>
                                         <li data-target="#carousel-2" data-slide-to="3" class=""></li>
                                         <li data-target="#carousel-2" data-slide-to="4" class=""></li>
+                                        <li data-target="#carousel-2" data-slide-to="5" class=""></li>
                                     </ol>
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <!-- Slide item 1 -->
                                         <div class="item active">
-                                            <img src="~/Content/images/away/brain_imaging.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/a_non-combatants_vietnam.jpg" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 2 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/one_night_in_the_dharma_lounge.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/7_disappearing_words.JPG" class="rounded" />
                                         </div>
                                         <!-- Slide item 3 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/from_jrsey_cty_with_love_and_squalor.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/blackout.jpg" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 4 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/santa_clara_server_room.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/bot.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 5 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/machine_language.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/and_now_a_word_from_the_management.jpg" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 6 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/the_convergence.jpg" class="rounded" />
                                         </div>
 
                                     </div>
@@ -222,12 +236,19 @@
                                 <div class="block-content">
                                     <h3 class="block-title">Section 0010</h3>
                                     <p>
-                                        Reverse Engineering.
+                                        Reverse Engineering
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+
+
+                    <div class="row"> <!--second row-->
+
+                        <div class="col-xs-1">&nbsp;</div>
+
+                        <div class="col-xs-5">
                             <div class="block block-image v1">
                                 <div id="carousel-3" class="carousel carousel-2 slide mb-40" data-ride="carousel">
                                     <!-- Indicators -->
@@ -244,22 +265,22 @@
                                     <div class="carousel-inner" role="listbox">
                                         <!-- Slide item 1 -->
                                         <div class="item active">
-                                            <img src="~/Content/images/away/years_later_frank_ohara.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/television_is_not_for_everyone.jpg" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 2 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/twilight_zone_reboot.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/from_jrsey_cty_with_love_and_squalor.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 3 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/the_convergence.JPG" class="rounded" />
+                                            <img src="~/Content/images/away/happiness.JPG" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 4 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/happiness.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/sex_and_its_discontents.jpg" class="rounded" />
                                         </div>
 
                                         <!-- Slide item 5 -->
@@ -269,7 +290,7 @@
 
                                         <!-- Slide item 6 -->
                                         <div class="item">
-                                            <img src="~/Content/images/away/7_disappearing_words.jpg" class="rounded" />
+                                            <img src="~/Content/images/away/game_on.jpg" class="rounded" />
                                         </div>
 
 
@@ -278,7 +299,63 @@
                                 <div class="block-content">
                                     <h3 class="block-title">Section 0011</h3>
                                     <p>
-                                        Edge Cases.
+                                        Living Behind the Lines
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="block block-image v1">
+                                <div id="carousel-3" class="carousel carousel-2 slide mb-40" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-3" data-slide-to="1" class=""></li>
+                                        <li data-target="#carousel-3" data-slide-to="2" class=""></li>
+                                        <li data-target="#carousel-3" data-slide-to="3" class=""></li>
+                                        <li data-target="#carousel-3" data-slide-to="4" class=""></li>
+                                        <li data-target="#carousel-3" data-slide-to="5" class=""></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <!-- Slide item 1 -->
+                                        <div class="item active">
+                                            <img src="~/Content/images/away/taking_the_fall.jpg" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 2 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/years_later_frank_ohara.JPG" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 3 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/the_cosmological_constant.JPG" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 4 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/division_by_zero.jpg" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 5 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/walt_whitman_ekphrastic.jpg" class="rounded" />
+                                        </div>
+
+                                        <!-- Slide item 6 -->
+                                        <div class="item">
+                                            <img src="~/Content/images/away/leaving.jpg" class="rounded" />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="block-content">
+                                    <h3 class="block-title">Section 0100</h3>
+                                    <p>
+                                        Edge Cases
                                     </p>
                                 </div>
                             </div>
@@ -287,7 +364,7 @@
                 </div>
             </section>
 
-        </div>      
+        </div>
 
-        </div> 
+    </div>
 </section>

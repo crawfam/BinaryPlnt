@@ -24,7 +24,9 @@ namespace BinaryPlanet.Controllers
                 System.Web.HttpContext.Current.Session["UserName"] = bpUser.FirstName + " " + bpUser.LastName;
             }
 
-            return View();
+            HomePageViewModel homePageViewModel = new HomePageViewModel();
+
+            return View(homePageViewModel);
         }
 
         public ActionResult TableOfContents()
