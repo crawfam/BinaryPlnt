@@ -2095,7 +2095,6 @@
     <Content Include="Content\images\backgrounds\shop-fashion-bg-4.jpg" />
     <Content Include="Content\images\elements\contact-map-1.png" />
     <Content Include="Content\images\favicon.png" />
-    <Content Include="Content\images\favicon_visio.png" />
     <Content Include="Content\images\icons\png\set-1\1.png" />
     <Content Include="Content\images\icons\png\set-1\10.png" />
     <Content Include="Content\images\icons\png\set-1\11.png" />
@@ -2494,7 +2493,6 @@
     <Content Include="Content\js\sidebar-transitions\sidebar-transitions.js" />
     <Content Include="Content\js\velocity.min.js" />
     <Content Include="Content\less\dev\style-switcher.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
