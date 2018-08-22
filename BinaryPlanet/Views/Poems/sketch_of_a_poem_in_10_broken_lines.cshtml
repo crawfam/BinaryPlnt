@@ -40,7 +40,7 @@
                 </p>
                 <p>
                     words in this poem.<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They go flush @Html.ActionLink("left", "poem", "poems", new { id = 22 }, null) down the page.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They go flush <span data-toggle="tooltip" title="&nbsp;@Model.GetPoemName(22)&nbsp;">@Html.ActionLink("left", "poem", "poems", new { id = 22 }, null)</span> down the page.<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each word breaks its own<br />
 <p>
                     line. <b>[he]</b> is on top,<br />

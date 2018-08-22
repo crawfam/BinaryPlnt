@@ -95,7 +95,13 @@ namespace BinaryPlanet.ViewModels
                 }
             }
 
-
         }
+
+        public string GetPoemName(int Id)
+        {
+            return _context.Poems.Where(p => p.Id == Id).Select(p => p.Name).FirstOrDefault().ToString();
+        }
+
+
     }
 }

@@ -40,7 +40,7 @@
                     <h1 class="title">@Model.Name</h1>
                     <p>
                         What took you so long?<br />
-                        It was your turn to pick up the @Html.ActionLink("kids", "poem", "poems", new { id = 39 }, null).<br />
+                        It was your turn to pick up the <span data-toggle="tooltip" title="&nbsp;@Model.GetPoemName(39)&nbsp;">@Html.ActionLink("kids", "poem", "poems", new { id = 39 }, null)</span>.<br />
                         We have to talk.<br />
                         I’m looking for an apartment.
                     </p>

@@ -35,7 +35,7 @@
 
                 <h1 class="title">@Model.Name</h1>
                 <p>
-                    Computer @Html.ActionLink("code", "poem", "poems", new { id = 14 }, null) is written<br />
+                    Computer <span data-toggle="tooltip" title="&nbsp;@Model.GetPoemName(14)&nbsp;">@Html.ActionLink("code", "poem", "poems", new { id = 14 }, null)</span> is written<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in lines not much different<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from what you see here<br />
                 </p>
