@@ -39,7 +39,8 @@
                 <div id="poem">
                     <h1 class="title">@Model.Name</h1>
                     <p style="text-align:justify;">
-                        Losing yourself is not like losing your credit card. The dozen unseen faces. Sitting at screens. Some half-smiling. Some with pursed cigarette lips. Some unshaven. The phones of voices a distant crackle away. The explanations. The missing birth certificate. What is the maiden name of your mother? [A maiden, is that what she was?] Where have you lived. Where are you living now? How did this happen. How did this happen to you? In the end, the feeling after a year driving around in your car, looking out the passing windows, that you are finally back together again. No. Losing yourself is more like losing your eyes in the face of a lover looking directly through your façade.
+                        Losing yourself is not like losing your credit card. The dozen unseen faces. Sitting at screens. Some half-smiling. Some with pursed cigarette lips. Some unshaven. The <span data-toggle="tooltip" title="&nbsp;@Model.GetPoemName(52)&nbsp;">@Html.ActionLink("phones", "poem", "poems", new { id = 52 }, null)</span>
+                        of voices a distant crackle away. The explanations. The missing birth certificate. What is the maiden name of your mother? [A maiden, is that what she was?] Where have you lived. Where are you living now? How did this happen. How did this happen to you? In the end, the feeling after a year driving around in your car, looking out the passing windows, that you are finally back together again. No. Losing yourself is more like losing your eyes in the face of a lover looking directly through your façade.
                     </p>
 
                 </div>
