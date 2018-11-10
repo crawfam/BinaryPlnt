@@ -246,6 +246,7 @@
     <Content Include="Content\audio\brain_imaging.mp3" />
     <Content Include="Content\audio\from_jrsey_cty_with_love_and_squalor.mp3" />
     <Content Include="Content\audio\fugue_before_lunch.mp3" />
+    <Content Include="Content\audio\Game_On.mp3" />
     <Content Include="Content\audio\hal_9000.mp3" />
     <Content Include="Content\audio\happiness.mp3" />
     <Content Include="Content\audio\machine_language.mp3" />
