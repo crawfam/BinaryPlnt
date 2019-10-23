@@ -2068,6 +2068,7 @@
     <Content Include="Content\images\away\when_victor_and_linden_got_married.jpg" />
     <Content Include="Content\images\away\years_later_frank_ohara.jpg" />
     <Content Include="Content\images\away\year_of_the_shoe.jpg" />
+    <Content Include="Content\images\backgrounds\desert_sky.jpg" />
     <Content Include="Content\images\backgrounds\blue_marble.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-1.jpg" />
     <Content Include="Content\images\backgrounds\body-bg-2.jpg" />
@@ -2222,6 +2223,7 @@
     <Content Include="Content\images\icons\svg\set-1\toilet-paper.svg" />
     <Content Include="Content\images\license.txt" />
     <Content Include="Content\images\logo\BPLogo.png" />
+    <Content Include="Content\images\logo\NewBPlogo.jpg" />
     <Content Include="Content\images\patterns\binding-dark.png" />
     <Content Include="Content\images\patterns\black-lozenge.png" />
     <Content Include="Content\images\patterns\blackorchid.png" />
@@ -2672,7 +2674,7 @@
     <Content Include="Views\Shared\_Layout_OLD.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml.bak" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -2693,7 +2695,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml.bak" />
     <Content Include="Views\Shared\_LayoutWhite.cshtml" />
     <Content Include="Views\Home\TableOfContents.cshtml" />
     <Content Include="Views\Poems\fugue_before_lunch.cshtml" />
@@ -2752,6 +2754,8 @@
     <Content Include="Views\Poems\bot.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
