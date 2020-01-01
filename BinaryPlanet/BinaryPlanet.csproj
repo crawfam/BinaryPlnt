@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PoemsController.cs" />
@@ -2674,7 +2675,8 @@
     <Content Include="Views\Shared\_Layout_OLD.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <None Include="Views\Home\Index.cshtml.bak" />
+    <Content Include="Views\Event\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -2695,7 +2697,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <None Include="Views\Shared\_Layout.cshtml.bak" />
+    <None Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LayoutWhite.cshtml" />
     <Content Include="Views\Home\TableOfContents.cshtml" />
     <Content Include="Views\Poems\fugue_before_lunch.cshtml" />
@@ -2754,8 +2756,8 @@
     <Content Include="Views\Poems\bot.cshtml" />
     <Content Include="Views\Poems\TEMPLATE.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index_One.Pager.cshtml" />
+    <Content Include="Views\Shared\_Layout.One.Pager.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
